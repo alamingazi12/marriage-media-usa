@@ -8,10 +8,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-  <!--project custom color-->
+  <!--project custom color #AD277C
 
-    <color name="edit_bg">#340354</color>
-    <color name="btn_color">#F79011</color>
-    <color name="heading_color">#09af00</color>
+#522B79
+
+#171717-->
+
+    <color name="btn_bg">#AD277C</color>
+    <color name="btn_color">#522B79</color>
+    <color name="heading_color">#171717</color>
    <!-- <color name="btn_color">#93662C</color> -->
 </resources>
