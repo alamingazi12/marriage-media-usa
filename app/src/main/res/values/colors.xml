@@ -17,5 +17,5 @@
     <color name="btn_bg">#AD277C</color>
     <color name="btn_color">#522B79</color>
     <color name="heading_color">#171717</color>
-   <!-- <color name="btn_color">#93662C</color> -->
+   <color name="layout_bg">#c6a9cf</color>
 </resources>

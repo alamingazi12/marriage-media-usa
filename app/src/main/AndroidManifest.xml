@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".ReviewActivity"></activity>
+        <activity android:name=".SummeryActivity"></activity>
+        <activity android:name=".PremiumPlanActivity" />
+        <activity android:name=".FreePlanActivity" />
+        <activity android:name=".PlanActivity" />
+        <activity android:name=".ReviewActivity" />
         <activity android:name=".OnBoardActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".RessetPassActivity" />
