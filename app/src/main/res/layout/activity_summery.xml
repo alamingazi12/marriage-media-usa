@@ -173,11 +173,12 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:layout_marginStart="40dp"
 
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/style_layout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -186,18 +187,17 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
 
         <TextView
-            android:textColor="@color/black"
             android:id="@+id/imageView10"
-            android:text="$5"
-            android:gravity="center"
             android:layout_width="60dp"
             android:layout_height="22dp"
             android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="$5"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/textView35"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView35"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/textView35"
@@ -231,33 +231,30 @@
             app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
 
-
         <TextView
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:text="$1"
             android:id="@+id/imageView11"
             android:layout_width="60dp"
             android:layout_height="22dp"
             android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="$1"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/textView36"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView36"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/imageView12"
             android:layout_width="60dp"
             android:layout_height="22dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
             android:text="$6"
             android:textColor="@color/black"
-            android:gravity="center"
-            android:layout_marginEnd="16dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView37"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView37"
-           />
+            app:layout_constraintTop_toTopOf="@+id/textView37" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -266,13 +263,66 @@
         android:id="@+id/button8"
         android:layout_width="230dp"
         android:layout_height="@dimen/btn_height"
-        android:layout_marginStart="76dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/layout_bg"
         android:text="Continue"
         android:textAllCaps="false"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/style_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="62dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/visa" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName8"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:ems="10"
+
+            android:inputType="textPassword"
+            android:hint="1233445576"
+            android:textColorHint="@color/white"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:textColor="@color/black"
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:textSize="16dp"
+            style="@style/view_all_btn"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
