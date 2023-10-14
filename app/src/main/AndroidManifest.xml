@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA"
         >
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ProfileActivity">
+
+        </activity>
         <activity android:name=".HelpActivity" />
         <activity android:name=".AccountSettingActivity">
 
@@ -18,20 +20,30 @@
         <activity android:name=".AboutActivity">
 
         </activity>
-        <activity android:name=".MessageActivity" android:exported="true">
+        <activity android:name=".MessageActivity">
+
+        </activity>
+        <activity android:name=".NewCardActivity">
+
+        </activity>
+        <activity android:name=".SettingActivity">
+
+        </activity>
+        <activity android:name=".AddCardActivity">
+
+        </activity>
+        <activity android:name=".PaymentActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewCardActivity" />
-        <activity android:name=".SettingActivity" />
-        <activity android:name=".AddCardActivity">
+        <activity android:name=".SummeryActivity">
 
         </activity>
-        <activity android:name=".PaymentActivity" />
-        <activity android:name=".SummeryActivity" />
-        <activity android:name=".PremiumPlanActivity" />
+        <activity android:name=".PremiumPlanActivity">
+
+        </activity>
         <activity android:name=".FreePlanActivity">
 
         </activity>

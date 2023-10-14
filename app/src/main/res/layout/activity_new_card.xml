@@ -14,7 +14,7 @@
         android:layout_marginTop="88dp"
         android:text="Card Name"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,7 +22,7 @@
         android:id="@+id/editTextTextPersonName9"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:paddingLeft="10dp"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Card Number"
-        android:textSize="20dp"
+        android:textSize="16dp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName9"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
@@ -52,7 +52,7 @@
         android:layout_width="0dp"
         android:paddingLeft="10dp"
         android:layout_height="50dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:background="@drawable/style_layout"
@@ -67,9 +67,9 @@
         android:id="@+id/textView53"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="Expire Date"
-        android:textSize="20dp"
+        android:textSize="16dp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName10"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
@@ -78,7 +78,7 @@
         android:id="@+id/editTextTextPersonName11"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:paddingLeft="10dp"
@@ -97,12 +97,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginTop="10dp"
         android:text="CVV"
-        android:textSize="20dp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName12"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName12" />
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName12"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
 
     <EditText
         android:id="@+id/editTextTextPersonName12"

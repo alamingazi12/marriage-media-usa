@@ -9,9 +9,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout4"
         android:layout_width="0dp"
-        android:layout_height="370dp"
+        android:layout_height="320dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="65dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/style_layout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="15dp"
             android:text="Unlimited Plan Free"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
             android:id="@+id/textView36"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="13dp"
             android:text="24/7  Support"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="@+id/textView35"
@@ -66,7 +66,7 @@
             android:id="@+id/textView37"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="13dp"
             android:text="High time Learning"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="@+id/textView36"
@@ -76,7 +76,7 @@
             android:id="@+id/textView38"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="13dp"
             android:text="Best Learning experience"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="@+id/textView37"
@@ -86,7 +86,7 @@
             android:id="@+id/textView39"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="13dp"
             android:text="Mistake Review"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="@+id/textView38"
@@ -96,7 +96,7 @@
             android:id="@+id/textView40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="13dp"
             android:text="Ad Free Service"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="@+id/textView39"
@@ -110,7 +110,7 @@
             android:text="$5/month"
             android:textColor="@color/black"
 
-            android:textSize="25dp"
+            android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView33" />
@@ -178,7 +178,7 @@
         android:layout_height="100dp"
 
         android:layout_marginStart="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/style_layout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -274,7 +274,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="328dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
@@ -297,16 +297,17 @@
 
         <EditText
             android:id="@+id/editTextTextPersonName8"
-            android:layout_width="176dp"
+            android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_marginStart="4dp"
             android:ems="10"
 
+            android:background="#00000000"
             android:inputType="textPassword"
-            android:hint="1233445576"
             android:textColorHint="@color/white"
 
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button10"
             app:layout_constraintStart_toEndOf="@+id/imageView9"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
@@ -317,7 +318,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Change"
-            android:textSize="16dp"
+            android:textSize="14dp"
             style="@style/view_all_btn"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
