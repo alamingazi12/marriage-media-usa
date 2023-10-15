@@ -32,11 +32,8 @@
         <activity android:name=".AddCardActivity">
 
         </activity>
-        <activity android:name=".PaymentActivity" android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".PaymentActivity">
+
         </activity>
         <activity android:name=".SummeryActivity">
 
@@ -57,7 +54,12 @@
         <activity android:name=".ForgetPassActivity">
 
         </activity>
-        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".WelcomeActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ChengePassActivity" >
 
         </activity>
