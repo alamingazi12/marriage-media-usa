@@ -3,6 +3,7 @@ package com.example.islamicmerriageusa;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -13,7 +14,7 @@ import android.widget.TextView;
 public class WelcomeActivity extends AppCompatActivity {
 
     ViewPager slider_viewPager;
-    Button next,back;
+    Button next,back,login;
     TextView[] dots;
     LinearLayout mdotlinearlayout;
    // ViewpagerAdapter viewpagerAdapter;
@@ -22,15 +23,33 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+        initAll();
 
         slider_viewPager=findViewById(R.id.my_view_pager);
-        next=findViewById(R.id.button2);
-        back=findViewById(R.id.button);
         mdotlinearlayout=findViewById(R.id.dotlayout);
         ViewpagerAdapter viewpagerAdapter=new ViewpagerAdapter(WelcomeActivity.this);
         slider_viewPager.setAdapter(viewpagerAdapter);
         setUpIndicator(0);
         slider_viewPager.addOnPageChangeListener(pageChangeListener);
+    }
+
+    private void initAll() {
+        Button get_started=findViewById(R.id.btn_start);
+        get_started.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(WelcomeActivity.this,PlanActivity.class);
+                startActivity(intent);
+            }
+        });
+        login=findViewById(R.id.btn_login1);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(WelcomeActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void setUpIndicator(int position){

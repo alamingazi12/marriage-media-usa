@@ -7,6 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="orange">#ffa000</color>
+    <color name="applienc_bg_color">#F6EED7</color>
+    <color name="card_gray">#9CA6EC</color>
+    <color name="title_color">#10EA18</color>
+    <color name="google_btn_color">#EF4534</color>
+    <color name="fb_background">#1F73B9</color>
+    <color name="chai_color">#BFC6CA</color>
+    <color name="card_color">#b2ebf2</color>
+    <color name="mini_bg_color">#C3C2E1</color>
+    <color name="gift_bg_color">#AFADD4</color>
+    <color name="edit_bg">#9CF6F5F3</color>
+    <color name="heading_text_color">#D1DAE4</color>
 
   <!--project custom color #AD277C
 

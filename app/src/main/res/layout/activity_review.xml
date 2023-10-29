@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="278dp"
-        android:layout_height="234dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="232dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/app_icon" />
@@ -21,30 +21,29 @@
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="64dp"
         android:text="Congrasulations"
         android:textColor="@color/black"
-        android:textSize="35dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="27dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <TextView
         android:id="@+id/textView31"
         android:layout_width="0dp"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="19dp"
-        android:lineHeight="25dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:lineHeight="25dp"
         android:text="You have successfully subscribe\n 1 month premium plan. Now you can enjoy \n all the benifits"
+        android:textColor="@color/black"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 

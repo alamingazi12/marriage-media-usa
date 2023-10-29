@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_rstpass"
         android:layout_width="0dp"
         android:layout_height="@dimen/btn_height"
         android:layout_marginStart="40dp"
@@ -121,11 +121,11 @@
         android:layout_marginTop="8dp"
         android:text="@string/account_speech"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/btn_signup"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_rstpass" />
 
     <TextView
         android:textStyle="bold"
@@ -136,7 +136,7 @@
         android:layout_marginBottom="64dp"
         android:text="Already have an account?"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/btn_loginn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,7 +144,7 @@
         app:layout_constraintVertical_bias="0.142" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_signup"
         style="@style/view_all_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -158,7 +158,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView14" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_loginn"
         style="@style/view_all_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

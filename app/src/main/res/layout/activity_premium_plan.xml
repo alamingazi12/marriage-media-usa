@@ -244,7 +244,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btn_continue"
         android:layout_width="230dp"
         android:layout_height="@dimen/btn_height"
         android:layout_marginBottom="24dp"
