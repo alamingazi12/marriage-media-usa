@@ -10,14 +10,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".ProductActivity" android:exported="true">
+        <activity android:name=".ProductActivity">
+
+        </activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".HelpActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>/>
         </activity>
-        <activity android:name=".ProfileActivity"></activity>
-        <activity android:name=".HelpActivity" />
+
         <activity android:name=".AccountSettingActivity"></activity>
         <activity android:name=".AboutActivity"></activity>
         <activity android:name=".MessageActivity"></activity>
