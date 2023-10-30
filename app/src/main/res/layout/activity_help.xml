@@ -10,6 +10,10 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_contact"
         android:layout_width="0dp"
+        app:tabIndicatorFullWidth="true"
+        app:tabTextAppearance="@style/Custom_Style"
+        app:tabIndicatorColor="@color/mini_bg_color"
+        app:tabSelectedTextColor="@color/heading_color"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
