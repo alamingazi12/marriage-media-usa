@@ -54,9 +54,9 @@ public class SingleProductActivity extends AppCompatActivity {
         mdotlinearlayout.removeAllViews();
         for(int i=0;i<dots.length;i++){
             dots[i]=new TextView(this);
-            dots[i].setText(Html.fromHtml("&#8226"));
-            dots[i].setTextSize(40);
-            dots[i].setTextColor(getResources().getColor(R.color.teal_200));
+            dots[i].setText(Html.fromHtml("&#8722"));
+            dots[i].setTextSize(50);
+            dots[i].setTextColor(getResources().getColor(R.color.heading_text_color));
             mdotlinearlayout.addView(dots[i]);
         }
         dots[position].setTextColor(getResources().getColor(R.color.black));
