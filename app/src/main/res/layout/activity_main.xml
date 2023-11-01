@@ -10,7 +10,7 @@
     android:layout_margin="10dp"
     android:background="@drawable/card_style_radious"
     android:layout_width="match_parent"
-    android:layout_height="105dp">
+    android:layout_height="150dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -20,37 +20,128 @@
             android:id="@+id/textView82"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="16dp"
-            android:text="MoboCheck Guarantee"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Description"
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView23"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="36dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/check" />
-
         <TextView
-            android:id="@+id/textView83"
+            android:id="@+id/textView87"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:fontFamily="sans-serif-condensed"
-            android:text="Data wiped (ADISA Certified) | Completely \ndiagnosed unit | Verified Battery Health |\nFully Functional/Tested | Unlocked device"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:text="Brand"
+            android:textSize="11dp"
+            android:fontFamily="sans-serif"
             android:textColor="@color/black"
-            android:textSize="13dp"
-
-            app:layout_constraintStart_toStartOf="@+id/textView82"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model Name"
+            android:textSize="11dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView87"
+            app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wireless Carrier"
+            android:textSize="11dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView88"
+            app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Operating System"
+            android:textSize="11dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView89"
+            app:layout_constraintTop_toBottomOf="@+id/textView89" />
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celluler Technology"
+            android:textSize="11dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView90"
+            app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAMSUNG"
+            android:textSize="11dp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView87"
+            app:layout_constraintTop_toTopOf="@+id/textView87" />
+
+        <TextView
+            android:id="@+id/textView93"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samsung Galaxy s21+5G"
+            android:textSize="11dp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView92"
+            app:layout_constraintTop_toBottomOf="@+id/textView92" />
+
+        <TextView
+            android:id="@+id/textView94"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:text="Unlocked for All Carriers"
+            app:layout_constraintStart_toStartOf="@+id/textView93"
+            app:layout_constraintTop_toBottomOf="@+id/textView93" />
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android 11"
+            android:textSize="11dp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView94"
+            app:layout_constraintTop_toBottomOf="@+id/textView94" />
+
+        <TextView
+            android:id="@+id/textView96"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="5G"
+            android:textSize="11dp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView95"
+            app:layout_constraintTop_toBottomOf="@+id/textView95" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
