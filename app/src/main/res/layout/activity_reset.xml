@@ -51,7 +51,7 @@
         android:layout_height="@dimen/btn_height"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="156dp"
+        android:layout_marginBottom="188dp"
         android:backgroundTint="@color/btn_bg"
         android:text="Confirm"
         android:textAllCaps="false"
@@ -65,7 +65,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="0dp"
-        android:layout_height="@dimen/editfield_ht"
+        android:layout_height="@dimen/edit_text_height"
         android:layout_marginStart="40dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="40dp"
@@ -87,7 +87,7 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="3dp"
         android:text="Marriage"
         android:textColor="@color/btn_bg"
         android:textSize="30dp"
@@ -114,13 +114,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:textStyle="bold"
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="36dp"
         android:text="@string/account_speech"
-        android:textSize="14sp"
+        android:textSize="@dimen/ac_text_size"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/btn_signup"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -143,9 +143,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14"
         app:layout_constraintVertical_bias="0.142" />
 
-    <Button
+    <TextView
         android:id="@+id/btn_signup"
-        style="@style/view_all_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create Account"
@@ -157,9 +156,8 @@
         app:layout_constraintStart_toEndOf="@+id/textView14"
         app:layout_constraintTop_toTopOf="@+id/textView14" />
 
-    <Button
+    <TextView
         android:id="@+id/btn_loginn"
-        style="@style/view_all_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
@@ -171,19 +169,6 @@
         app:layout_constraintStart_toEndOf="@+id/textView15"
         app:layout_constraintTop_toTopOf="@+id/textView15"
         app:layout_constraintVertical_bias="0.533" />
-
-    <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginRight="90dp"
-        android:background="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

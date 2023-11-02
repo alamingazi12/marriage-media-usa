@@ -27,7 +27,7 @@
             android:layout_marginStart="8dp"
             android:text="Customer Service"
             android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="@dimen/item_text_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView19"
             app:layout_constraintTop_toTopOf="parent" />
@@ -50,6 +50,7 @@
         android:background="@drawable/style_layout"
         android:layout_marginStart="40dp"
         android:layout_marginTop="35dp"
+
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -63,7 +64,7 @@
             android:layout_marginStart="8dp"
             android:text="Website"
             android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="@dimen/item_text_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView19"
             app:layout_constraintTop_toTopOf="parent" />
@@ -98,7 +99,7 @@
             android:layout_marginStart="8dp"
             android:text="Weekly Progress"
             android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="@dimen/item_text_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView19"
             app:layout_constraintTop_toTopOf="parent" />
@@ -133,7 +134,7 @@
             android:layout_marginStart="8dp"
             android:text="Weekly Progress"
             android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="@dimen/item_text_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView19"
             app:layout_constraintTop_toTopOf="parent" />
@@ -168,7 +169,7 @@
             android:layout_marginStart="8dp"
             android:text="Weekly Progress"
             android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="@dimen/item_text_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView19"
             app:layout_constraintTop_toTopOf="parent" />

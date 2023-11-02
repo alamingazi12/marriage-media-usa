@@ -22,7 +22,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout6"
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="@dimen/edit_text_height"
         android:layout_marginStart="40dp"
         android:layout_marginTop="176dp"
         android:layout_marginEnd="40dp"
@@ -56,7 +56,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout7"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/edit_text_height"
         android:layout_marginStart="40dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="40dp"
@@ -77,7 +77,7 @@
         <ImageView
             android:id="@+id/imageView16"
             android:layout_width="91dp"
-            android:layout_height="62dp"
+            android:layout_height="@dimen/edit_text_height"
             android:layout_marginStart="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -97,11 +97,11 @@
     <Button
         android:id="@+id/button11"
         android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/btn_height"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="56dp"
-        android:backgroundTint="@color/layout_bg"
+        android:backgroundTint="@color/btn_bg"
         android:text="Continue"
         android:textAllCaps="false"
         android:textSize="16dp"
@@ -114,9 +114,9 @@
     <Button
         android:id="@+id/button12"
         android:layout_width="250dp"
-        android:layout_height="55dp"
+        android:layout_height="@dimen/btn_height"
         android:layout_marginTop="44dp"
-        android:backgroundTint="@color/layout_bg"
+        android:backgroundTint="@color/btn_bg"
         android:text="Add card"
         android:textAllCaps="false"
         app:cornerRadius="10dp"

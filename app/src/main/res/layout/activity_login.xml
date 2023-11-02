@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:textColor="@color/black"
-        android:textSize="35dp"
+        android:textSize="@dimen/head_text_size"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/edittext_style"
         android:drawableRight="@drawable/ic_baseline_visibility_24"
@@ -62,7 +62,7 @@
     <Button
         android:id="@+id/btn_rstpass"
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="@dimen/btn_height"
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
@@ -79,25 +79,23 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/account_speech"
-        android:textSize="15dp"
+        android:text="@string/ac"
+        android:textSize="@dimen/ac_text_size"
         app:layout_constraintBottom_toBottomOf="@+id/create_account"
         app:layout_constraintEnd_toStartOf="@+id/create_account"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/create_account"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/create_account" />
 
     <TextView
-
         android:id="@+id/create_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="40dp"
         android:text="Create Account"
         android:textColor="@color/btn_bg"
-        android:textSize="15dp"
+        android:textSize="@dimen/ac_text_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -107,9 +105,9 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:gravity="center"
         android:text="Forget your Password?"
-        android:textSize="15dp"
+        android:textSize="@dimen/ac_text_size"
         app:layout_constraintEnd_toStartOf="@+id/reset_pass_text"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -121,16 +119,12 @@
         android:id="@+id/reset_pass_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="Resset Password"
+        android:text="Reset Password"
         android:textColor="@color/btn_bg"
-        android:textSize="15dp"
+        android:textSize="@dimen/ac_text_size"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
 
     <CheckBox
         android:id="@+id/checkBox2"
@@ -138,6 +132,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Remember Me"
+        android:textSize="13dp"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
@@ -160,6 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Marriage"
+        android:layout_marginStart="3dp"
         android:textColor="@color/btn_bg"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView20"
