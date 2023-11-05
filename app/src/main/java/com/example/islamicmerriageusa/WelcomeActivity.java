@@ -38,12 +38,12 @@ public class WelcomeActivity extends AppCompatActivity {
         get_started.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(WelcomeActivity.this,PlanActivity.class);
+                Intent intent=new Intent(WelcomeActivity.this,ChoosePlanActivity.class);
                 startActivity(intent);
             }
         });
-        login=findViewById(R.id.btn_login1);
-        login.setOnClickListener(new View.OnClickListener() {
+       TextView login1=findViewById(R.id.btn_login1);
+        login1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(WelcomeActivity.this,LoginActivity.class);

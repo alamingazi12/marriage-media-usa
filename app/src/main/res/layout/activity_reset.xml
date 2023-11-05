@@ -10,17 +10,17 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="44dp"
         android:text="Change Password"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
+        android:textSize="14dp"
         android:id="@+id/editTextTextPersonName"
         android:layout_width="0dp"
         android:layout_height="@dimen/editfield_ht"
@@ -63,19 +63,21 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
+        android:textSize="14dp"
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="0dp"
         android:layout_height="@dimen/edit_text_height"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/edittext_style"
 
         android:drawableRight="@drawable/ic_baseline_visibility_24"
         android:ems="10"
-        android:hint="Confirm new Password"
+        android:hint="Confirm  password"
         android:inputType="textPersonName"
         android:paddingLeft="12dp"
+
         android:paddingRight="7dp"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +103,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="76dp"
         android:text="Islamic"
 
         android:textColor="@color/heading_color"
@@ -117,7 +119,7 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="84dp"
         android:text="@string/account_speech"
         android:textSize="@dimen/ac_text_size"
         android:textStyle="bold"
@@ -128,28 +130,28 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_rstpass" />
 
     <TextView
-        android:textStyle="bold"
-       android:textSize="14sp"
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="4dp"
         android:text="Already have an account?"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/btn_loginn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
+        android:layout_marginLeft="3dp"
+        android:textStyle="bold"
         android:id="@+id/btn_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create Account"
         android:textColor="@color/btn_bg"
-        android:textSize="15sp"
+        android:textSize="@dimen/ac_text_size"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -157,18 +159,40 @@
         app:layout_constraintTop_toTopOf="@+id/textView14" />
 
     <TextView
+      android:layout_marginLeft="3dp"
+        android:textStyle="bold"
         android:id="@+id/btn_loginn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
         android:textColor="@color/btn_bg"
-        android:textSize="15sp"
+        android:textSize="@dimen/ac_text_size"
         app:layout_constraintBottom_toBottomOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView15"
         app:layout_constraintTop_toTopOf="@+id/textView15"
         app:layout_constraintVertical_bias="0.533" />
+
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/textView111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="New password"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/textView112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Confirm new password"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

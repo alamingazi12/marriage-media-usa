@@ -17,7 +17,6 @@
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -70,7 +69,7 @@
         android:backgroundTint="@color/btn_bg"
         android:text="Sign Up"
         android:textAllCaps="false"
-        android:textSize="20sp"
+        android:textSize="@dimen/btn_text_size"
         app:cornerRadius="7dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -128,11 +127,13 @@
 
     <TextView
         android:textColor="@color/btn_bg"
-        android:textSize="19sp"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:layout_marginLeft="3dp"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent"

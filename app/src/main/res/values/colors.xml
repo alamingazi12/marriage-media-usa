@@ -10,6 +10,7 @@
     <color name="orange">#ffa000</color>
     <color name="applienc_bg_color">#F6EED7</color>
     <color name="card_gray">#9CA6EC</color>
+    <color name="card_bg_color">#d3d3d3</color>
     <color name="title_color">#10EA18</color>
     <color name="google_btn_color">#EF4534</color>
     <color name="fb_background">#1F73B9</color>
@@ -25,9 +26,10 @@
 #522B79
 
 #171717-->
-
-    <color name="btn_bg">#AD277C</color>
+   <color name="view_color">#C8BFC5</color>
+    <color name="btn_bg">#AE277C</color>
     <color name="btn_color">#522B79</color>
     <color name="heading_color">#171717</color>
    <color name="layout_bg">#c6a9cf</color>
+    <color name="box_color">#532B78</color>
 </resources>

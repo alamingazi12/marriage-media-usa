@@ -10,41 +10,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".SingleProductActivity" android:exported="true">
+        <activity android:name=".ChoosePlanActivity"></activity>
+        <activity android:name=".SingleProductActivity"></activity>
+        <activity android:name=".CardActivity"></activity>
+        <activity android:name=".ProductActivity">
+
+        </activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".AccountSettingActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".NewCardActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".CardActivity"
-            >
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".AddCardActivity" >
 
         </activity>
-        <activity android:name=".ProductActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".HelpActivity" />
-        <activity android:name=".AccountSettingActivity" />
-        <activity android:name=".AboutActivity"></activity>
-        <activity android:name=".MessageActivity" />
-        <activity android:name=".NewCardActivity" />
-        <activity android:name=".SettingActivity" />
-        <activity android:name=".AddCardActivity" />
-        <activity android:name=".PaymentActivity" />
-        <activity android:name=".SummeryActivity" />
-        <activity android:name=".PremiumPlanActivity" />
-        <activity android:name=".FreePlanActivity" />
+        <activity android:name=".PaymentActivity" >
+
+        </activity>
+        <activity
+            android:name=".SummeryActivity"
+            >
+
+
+        </activity>
+        <activity android:name=".PremiumPlanActivity">
+
+        </activity>
+        <activity android:name=".FreePlanActivity">
+
+        </activity>
         <activity android:name=".PlanActivity" />
         <activity android:name=".ReviewActivity" />
         <activity android:name=".OnBoardActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".RessetPassActivity" />
         <activity android:name=".ForgetPassActivity" />
-        <activity android:name=".WelcomeActivity" />
-        <activity android:name=".ChengePassActivity" />
+        <activity android:name=".WelcomeActivity">
+
+        </activity>
+        <activity android:name=".ChengePassActivity">
+
+        </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
