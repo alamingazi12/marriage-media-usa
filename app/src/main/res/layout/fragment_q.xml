@@ -19,8 +19,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.154">
+        app:layout_constraintTop_toBottomOf="@+id/textView118"
+        app:layout_constraintVertical_bias="0.048">
 
         <TextView
             android:id="@+id/textView55"
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/btn_height"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/style_layout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/btn_height"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/style_layout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -121,18 +121,19 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:background="@drawable/btn_style"
-        android:paddingLeft="3dp"
-        android:paddingRight="3dp"
         android:id="@+id/button17"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+       android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="sans-serif"
 
-        android:text="General"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
         android:gravity="center"
-        android:textSize="12dp"
+        android:text="General"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/button16"
         app:layout_constraintEnd_toStartOf="@+id/button16"
@@ -141,19 +142,20 @@
         app:layout_constraintTop_toTopOf="@+id/button16" />
 
     <TextView
-
         android:id="@+id/button15"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/btn_style"
+        android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:paddingLeft="3dp"
-        android:paddingRight="3dp"
+
         android:text="Service"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="12dp"
+        android:textSize="16dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toStartOf="@+id/button18"
         app:layout_constraintHorizontal_bias="0.5"
@@ -161,18 +163,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:background="@drawable/btn_style"
-        android:paddingLeft="3dp"
-        android:paddingRight="3dp"
         android:id="@+id/button16"
-        android:layout_width="65dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="sans-serif-condensed"
 
         android:gravity="center"
-
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
         android:text="Account"
         android:textColor="@color/white"
-        android:textSize="12dp"
+        android:textSize="16dp"
 
         app:layout_constraintBottom_toBottomOf="@+id/button15"
         app:layout_constraintEnd_toStartOf="@+id/button15"
@@ -183,16 +185,18 @@
 
     <TextView
         android:id="@+id/button18"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
         android:background="@drawable/btn_style"
+        android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:paddingLeft="3dp"
-        android:paddingRight="3dp"
+
         android:text="Language"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="12dp"
+        android:textSize="16dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/button15"
         app:layout_constraintEnd_toEndOf="parent"
@@ -206,15 +210,54 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/edittext_style"
-        android:backgroundTint="@color/layout_bg"
+        android:background="@drawable/style_layout"
+
         android:drawableLeft="@drawable/ic_baseline_search_24"
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button15" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/textView117"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18dp"
+        android:text="What is Islamic Marriage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView118"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="Lorem Ipsum is simply dummy text of the\nprinting and typesetting industry. Lorem Ipsum has been the"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView117"
+        app:layout_constraintTop_toBottomOf="@+id/textView117" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/view_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView117" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

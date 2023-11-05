@@ -108,8 +108,8 @@
 
         <ImageView
             android:id="@+id/imageView16"
-            android:layout_width="81dp"
-            android:layout_height="58dp"
+            android:layout_width="74dp"
+            android:layout_height="57dp"
             android:layout_marginStart="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +120,7 @@
             android:id="@+id/imageView17"
             android:layout_width="83dp"
             android:layout_height="31dp"
-            android:layout_marginStart="64dp"
+            android:layout_marginStart="52dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView16"
             app:layout_constraintTop_toTopOf="parent"
