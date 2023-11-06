@@ -12,8 +12,8 @@
         android:id="@+id/constraintLayout9"
         android:layout_width="match_parent"
         android:layout_height="@dimen/btn_height"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/style_layout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
             android:layout_width="30dp"
             android:layout_height="20dp"
             android:layout_marginRight="14dp"
-            android:src="@drawable/arrow"
+            android:src="@drawable/ic_forward"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -50,9 +50,9 @@
         android:id="@+id/constraintLayout10"
         android:layout_width="match_parent"
         android:layout_height="@dimen/btn_height"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/style_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -76,7 +76,7 @@
             android:layout_width="30dp"
             android:layout_height="20dp"
             android:layout_marginRight="14dp"
-            android:src="@drawable/arrow"
+            android:src="@drawable/ic_forward"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -86,9 +86,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/btn_height"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/style_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -113,7 +113,7 @@
             android:layout_width="30dp"
             android:layout_height="20dp"
             android:layout_marginRight="14dp"
-            android:src="@drawable/arrow"
+            android:src="@drawable/ic_forward"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -121,8 +121,9 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
+        android:textStyle="bold"
         android:id="@+id/button17"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
        android:paddingLeft="7dp"
         android:paddingRight="7dp"
         android:layout_height="30dp"
@@ -142,8 +143,9 @@
         app:layout_constraintTop_toTopOf="@+id/button16" />
 
     <TextView
+        android:textStyle="bold"
         android:id="@+id/button15"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_style"
@@ -163,8 +165,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:textStyle="bold"
         android:id="@+id/button16"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="30dp"
         android:background="@drawable/btn_style"
         android:fontFamily="sans-serif-condensed"
@@ -184,8 +187,9 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
+        android:textStyle="bold"
         android:id="@+id/button18"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="30dp"
         android:background="@drawable/btn_style"
         android:fontFamily="sans-serif-condensed"
@@ -208,7 +212,7 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="46dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
@@ -227,7 +231,7 @@
         android:id="@+id/textView117"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
         android:textSize="18dp"
         android:text="What is Islamic Marriage"
@@ -239,7 +243,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="32dp"
         android:text="Lorem Ipsum is simply dummy text of the\nprinting and typesetting industry. Lorem Ipsum has been the"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -251,13 +255,26 @@
         android:id="@+id/view7"
         android:layout_width="0dp"
         android:layout_height="2px"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="32dp"
         android:background="@color/view_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView117" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/ic_dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/textView117"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView117"
+        app:layout_constraintTop_toTopOf="@+id/textView117"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

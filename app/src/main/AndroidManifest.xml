@@ -17,13 +17,15 @@
 
         </activity>
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".HelpActivity" android:exported="true">
+        <activity android:name=".HelpActivity">
+
+        </activity>
+        <activity android:name=".AccountSettingActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AccountSettingActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".MessageActivity" />
         <activity android:name=".NewCardActivity">
@@ -51,7 +53,9 @@
         <activity android:name=".PlanActivity" />
         <activity android:name=".ReviewActivity" />
         <activity android:name=".OnBoardActivity" />
-        <activity android:name=".SearchActivity" />
+        <activity android:name=".SearchActivity">
+
+        </activity>
         <activity android:name=".RessetPassActivity" />
         <activity android:name=".ForgetPassActivity" />
         <activity android:name=".WelcomeActivity">
