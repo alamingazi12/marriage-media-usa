@@ -10,15 +10,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".BookingActivity" android:exported="true">
+        <activity android:name=".SearchBiodataActivity"></activity>
+        <activity android:name=".BookingCommunityActivity" />
+        <activity
+            android:name=".BookingActivity"
+            >
+
+        </activity>
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".BiodataActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ContactActivity"></activity>
-        <activity android:name=".BiodataActivity"></activity>
         <activity android:name=".ChoosePlanActivity" />
         <activity android:name=".SingleProductActivity" />
         <activity android:name=".CardActivity" />
@@ -45,11 +51,7 @@
         <activity android:name=".ChengePassActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity
-            android:name=".MainActivity"
-           >
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

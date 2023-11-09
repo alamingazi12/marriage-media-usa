@@ -78,15 +78,17 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
+                android:layout_height="200dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/biodata_layout_style"
 
-                android:layout_height="200dp">
+                android:background="@drawable/biodata_layout_style">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView3"
                     android:layout_width="85dp"
                     android:layout_height="85dp"
                     android:layout_marginTop="28dp"
@@ -95,6 +97,63 @@
                     app:layout_constraintHorizontal_bias="0.498"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/layout_style"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/circleImageView3">
+
+                    <View
+                        android:id="@+id/view27"
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:background="@color/view_color"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:id="@+id/textView131"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:text="2020"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/view27"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:id="@+id/textView139"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:text="Date of year"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view27"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="185dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

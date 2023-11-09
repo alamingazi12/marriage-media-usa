@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookingActivity">
+    tools:context=".BookingCommunityActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
 
@@ -165,7 +165,7 @@
                         android:textColor="@color/white"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
-                        android:text="Booking Marriage Office"
+                        android:text="Booking Community Center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </RelativeLayout>
@@ -317,7 +317,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"/>
 
+                 <Button
 
+                     android:layout_gravity="center"
+                     style="@style/Custom_Style"
+                     android:backgroundTint="@color/btn_bg"
+                     android:textSize="@dimen/btn_text_size"
+                     android:text="Submit"
+                     android:layout_marginBottom="25dp"
+                     android:textColor="@color/white"
+                     android:layout_width="300dp"
+                     android:layout_height="wrap_content"/>
 
 
             </LinearLayout>
