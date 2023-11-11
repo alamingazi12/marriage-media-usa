@@ -38,6 +38,14 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <style name="MySpinnerLook"
+
+        parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="paddingStart">5dp</item>
+    </style>
+
     <style name="button_style_google" parent="Widget.MaterialComponents.Button.TextButton">
         <!-- toolbar text font. -->
         <!-- <item name="fontFamily">@font/colabeerry</item> -->

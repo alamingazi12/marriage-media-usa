@@ -4,4 +4,9 @@
     <string name="ac">Do you have any accounts?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="my_arr">
+        <item>Sponsored</item>
+        <item>Most Reviews</item>
+
+    </string-array>
 </resources>
