@@ -31,37 +31,23 @@
         app:srcCompat="@drawable/twitter" />
 
 
-    <ImageView
-
-        android:id="@+id/imageView2"
-        android:layout_width="170dp"
-        android:layout_height="196dp"
-        android:layout_margin="@dimen/image_margin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029"
-        app:srcCompat="@drawable/app_icon" />
-
     <Button
         android:id="@+id/button5"
         android:layout_width="0dp"
         android:layout_height="@dimen/btn_height"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/btn_bg"
-        android:text="Get Started"
+        android:text="Get Start"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="17dp"
         app:cornerRadius="7dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -76,13 +62,14 @@
         app:srcCompat="@drawable/instagram2" />
 
     <TextView
+
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="28dp"
         android:text="Connect with"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
@@ -91,7 +78,7 @@
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="28dp"
         android:text="Already have an Account?"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -106,9 +93,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:text="Login"
-        android:textStyle="bold"
         android:textColor="@color/btn_bg"
         android:textSize="17dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView28"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -116,30 +103,43 @@
         app:layout_constraintTop_toTopOf="@+id/textView28" />
 
 
-
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="@dimen/image_width"
         android:layout_height="@dimen/image_width"
         android:layout_margin="@dimen/image_margin"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27"
+        app:layout_constraintVertical_bias="0.237"
         app:srcCompat="@drawable/facebook" />
 
     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="এবং যারা পথনা করে যে\nহে আমাদের পালনকর্তা আমাদের এমন সন্তান\n দান করুন যারা আমাদের  চোখের প্রশান্তি হবে\n এবং আমাদের সৎ ক্রমশীলদের দান করুন"
         android:textColor="@color/black"
         android:textSize="15dp"
-        android:gravity="center"
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="lorem ipsum is simply dummy text of the printing \n and type setting industry"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="520dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/app_icon" />
 </androidx.constraintlayout.widget.ConstraintLayout>

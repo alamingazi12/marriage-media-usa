@@ -12,7 +12,7 @@ import android.widget.Toast;
 import static com.example.islamicmerriageusa.R.array.*;
 
 public class SearchCommunityActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    String[] country = { "Sponsored", "Most Reviewed"};
+    String[] country = { "Sponsored", "Most Reviews"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

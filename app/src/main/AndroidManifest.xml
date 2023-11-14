@@ -10,17 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".SearchCommunityActivity" android:exported="true">
+        <activity android:name=".FilterActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".FullBiodataActivity"
-            >
-
-        </activity>
+        <activity android:name=".SearchCommunityActivity"></activity>
+        <activity android:name=".FullBiodataActivity"></activity>
         <activity android:name=".SearchBiodataActivity" />
         <activity android:name=".BookingCommunityActivity" />
         <activity android:name=".BookingActivity" />
@@ -44,7 +42,11 @@
         <activity android:name=".FreePlanActivity" />
         <activity android:name=".PlanActivity" />
         <activity android:name=".ReviewActivity" />
-        <activity android:name=".OnBoardActivity" />
+        <activity
+            android:name=".OnBoardActivity"
+            >
+
+        </activity>
         <activity android:name=".SearchActivity" />
         <activity android:name=".RessetPassActivity" />
         <activity android:name=".ForgetPassActivity" />
@@ -52,7 +54,7 @@
         <activity android:name=".ChengePassActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

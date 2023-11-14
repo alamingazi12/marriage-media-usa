@@ -15,8 +15,6 @@ import android.widget.TextView;
 public class BiodataActivity extends AppCompatActivity {
      TextView hide_text;
      ImageView add_one;
-     boolean visible=false;
-     LinearLayout address_content;
      ConstraintLayout constraintLayout_animations;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,4 +1,5 @@
 <resources>
+    <string name="welcome_text">এবং যারা পথনা করে যে\r\n,হে আমাদের পালনকর্তা আমাদের এমন সন্তান দান করুন যারা আমাদের  চোখের প্রশান্তি হবে এবং আমাদের সৎ ক্রমশীলদের দান করুন </string>
     <string name="app_name">Islamic Marriege USA</string>
     <string name="account_speech">Do you have any accounts?</string>
     <string name="ac">Do you have any accounts?</string>
