@@ -10,12 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".FilterActivity" android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".FilterActivity">
         </activity>
         <activity android:name=".SearchCommunityActivity"></activity>
         <activity android:name=".FullBiodataActivity"></activity>
@@ -23,7 +18,13 @@
         <activity android:name=".BookingCommunityActivity" />
         <activity android:name=".BookingActivity" />
         <activity android:name=".ContactActivity" />
-        <activity android:name=".BiodataActivity" />
+        <activity android:name=".BiodataActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ChoosePlanActivity" />
         <activity android:name=".SingleProductActivity" />
         <activity android:name=".CardActivity" />

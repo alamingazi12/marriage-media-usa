@@ -1,325 +1,1643 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BiodataActivity">
-    <androidx.core.widget.NestedScrollView
-        android:fitsSystemWindows="true"
-        android:fillViewport="true"
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:orientation="vertical"
-            android:fitsSystemWindows="true"
+        android:layout_height="36dp"
+        android:background="@color/btn_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp">
+
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Islamic Marriage"
+                android:textColor="@color/white"
+
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.533" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/girl_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+        <androidx.core.widget.NestedScrollView
+            android:fillViewport="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar2"
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:layout_marginTop="4dp"
-                android:background="@color/btn_bg"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_height="match_parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:layout_editor_absoluteX="16dp">
+                    android:layout_height="70dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/biodata_layout_style">
 
                     <TextView
-                        android:id="@+id/textView109"
+                        android:id="@+id/textView119"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:text="Islamic Marriage"
+                        android:text="Biodata"
                         android:textColor="@color/white"
-
-                        android:textSize="16sp"
+                        android:textSize="20dp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.533" />
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:background="@drawable/biodata_layout_style">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/circleImageView"
-                        android:layout_width="30dp"
-                        android:layout_height="0dp"
-                        android:layout_marginEnd="32dp"
+                        android:id="@+id/circleImageView3"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginTop="28dp"
                         android:src="@drawable/girl_person"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0" />
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="32dp"
+                        android:background="@drawable/layout_style"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/circleImageView3">
+
+                        <View
+                            android:id="@+id/view27"
+                            android:layout_width="2dp"
+                            android:layout_height="0dp"
+                            android:background="@color/view_color"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:id="@+id/textView131"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:text="2020"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/view27"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:id="@+id/textView139"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:text="Date of year"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/view27"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="185dp" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.appcompat.widget.Toolbar>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_margin="20dp"
-                android:background="@drawable/biodata_layout_style">
-
-                <TextView
-                    android:id="@+id/textView119"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Biodata"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-
-                android:background="@drawable/biodata_layout_style">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/circleImageView3"
-                    android:layout_width="85dp"
-                    android:layout_height="85dp"
-                    android:layout_marginTop="28dp"
-                    android:src="@drawable/girl_person"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:layout_marginStart="32dp"
+                <LinearLayout
                     android:layout_marginTop="20dp"
-                    android:layout_marginEnd="32dp"
-                    android:background="@drawable/layout_style"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/circleImageView3">
-
-                    <View
-                        android:id="@+id/view27"
-                        android:layout_width="2dp"
-                        android:layout_height="0dp"
-                        android:background="@color/view_color"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:gravity="center"
-                        android:textColor="@color/white"
-                        android:id="@+id/textView131"
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:text="2020"
-                        android:textStyle="bold"
-                        android:textSize="18dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/view27"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:textStyle="bold"
-                        android:textSize="18dp"
-                        android:gravity="center"
-                        android:textColor="@color/white"
-                        android:id="@+id/textView139"
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:text="Date of year"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/view27"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/monther_layout_profile"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="185dp" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layout_animations"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:animateLayoutChanges="true"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <ImageView
-                    android:id="@+id/image_btn1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_baseline_add_circle_24" />
-
-                <TextView
-                    android:id="@+id/textView120"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:text="Address"
-                    android:textColor="@color/black"
-                    android:textSize="17dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/image_btn1"
-                    app:layout_constraintStart_toEndOf="@+id/image_btn1"
-                    app:layout_constraintTop_toTopOf="@+id/image_btn1"
-                    app:layout_constraintVertical_bias="1.0" />
-
-
-                <TextView
-
-                    android:id="@+id/hide_text"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginRight="30dp"
-
-                    android:text="To insert localized sample text in Word, type =rand() in the document where you want the text to appear, and then press ENTER.
-To insert localized sample text in Word, type =rand() in the document where you want the text to appear, and then press ENTER. "
-                    android:visibility="gone"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image_btn1" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-               android:layout_marginBottom="10dp"
-                android:layout_marginRight="20dp">
-
-                <ImageView
-                    android:id="@+id/image_btn1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/ic_baseline_add_circle_24" />
-
-                <TextView
-                    android:id="@+id/textView120"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:text="Address"
-                    android:textColor="@color/black"
-                    android:textSize="17dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/image_btn1"
-                    app:layout_constraintStart_toEndOf="@+id/image_btn1"
-                    app:layout_constraintTop_toTopOf="@+id/image_btn1"
-                    app:layout_constraintVertical_bias="1.0" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <LinearLayout
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="200dp">
-
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/hide_text"
+                    android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_show_hide"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginTop="28dp"
-                        android:text="To insert localized sample text in Word, type =rand() in the document where you want the text to appear, and then press ENTER.
-To insert localized sample text in Word, type =rand() in the document where you want the text to appear, and then press ENTER. "
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
 
+                        android:elevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </LinearLayout>
+                        app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp">
+                        <ImageView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/image_show_hide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
 
-                <ImageView
-                    android:id="@+id/image_btn1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="12dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+                        <TextView
 
-                <TextView
-                    android:textSize="17dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/textView120"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:text="Address"
-                    app:layout_constraintBottom_toBottomOf="@+id/image_btn1"
-                    app:layout_constraintStart_toEndOf="@+id/image_btn1"
-                    app:layout_constraintTop_toTopOf="@+id/image_btn1"
-                    app:layout_constraintVertical_bias="1.0" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <LinearLayout
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="200dp">
+                            android:id="@+id/textView152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/image_show_hide"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.432" />
 
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_marginBottom="30dp"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/hide_text"
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginTop="28dp"
-                        android:text="To insert localized sample text in Word, type =rand() in the document where you want the text to appear, and then press ENTER.
-To insert localized sample text in Word, type =rand() in the document where you want the text to appear, and then press ENTER. "
-
+                        android:id="@+id/visibility_table_layout"
+                        android:layout_height="350dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <EditText
+                            android:elevation="4dp"
+                            android:id="@+id/editTextTextPersonName24"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/card_style_radious"
+                            android:drawableRight="@drawable/ic_baseline_search_24"
+                            android:ems="10"
+                            android:hint="Search"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:fontFamily="sans-serif"
+                            android:outlineSpotShadowColor="@color/btn_bg"
+                            android:textColor="@color/black"
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:text="Dhaka"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+
+                            android:text="Barishal"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+                            android:text="Rangpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="78dp"
+                            android:layout_height="32dp"
+                            android:text="Khulna"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox8"
+                            android:layout_width="119dp"
+                            android:layout_height="32dp"
+                            android:text="Chittagong"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+                        <CheckBox
+                            android:backgroundTint="@color/btn_bg"
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Rnagpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox10"
+                            android:layout_width="135dp"
+                            android:layout_height="38dp"
+                            android:text="Sylhet"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Mymansing"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/monther_layout_profile2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_show_hide2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+
+                        android:elevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/image_show_hide2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/textView152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Education Qualification"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/image_show_hide2"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.432" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/visibility_table_layout2"
+                        android:layout_height="350dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <EditText
+                            android:elevation="4dp"
+                            android:id="@+id/editTextTextPersonName24"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/card_style_radious"
+                            android:drawableRight="@drawable/ic_baseline_search_24"
+                            android:ems="10"
+                            android:hint="Search"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:fontFamily="sans-serif"
+                            android:outlineSpotShadowColor="@color/btn_bg"
+                            android:textColor="@color/black"
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:text="Dhaka"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+
+                            android:text="Barishal"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+                            android:text="Rangpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="78dp"
+                            android:layout_height="32dp"
+                            android:text="Khulna"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox8"
+                            android:layout_width="119dp"
+                            android:layout_height="32dp"
+                            android:text="Chittagong"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+                        <CheckBox
+                            android:backgroundTint="@color/btn_bg"
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Rnagpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox10"
+                            android:layout_width="135dp"
+                            android:layout_height="38dp"
+                            android:text="Sylhet"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Mymansing"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/monther_layout_profile3"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_show_hide3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+
+                        android:elevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/image_show_hide3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+                        <TextView
+
+                            android:id="@+id/textView152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Family Information"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/image_show_hide3"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.432" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/visibility_table_layout3"
+                        android:layout_height="350dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <EditText
+                            android:elevation="4dp"
+                            android:id="@+id/editTextTextPersonName24"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/card_style_radious"
+                            android:drawableRight="@drawable/ic_baseline_search_24"
+                            android:ems="10"
+                            android:hint="Search"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:fontFamily="sans-serif"
+                            android:outlineSpotShadowColor="@color/btn_bg"
+                            android:textColor="@color/black"
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:text="Dhaka"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+
+                            android:text="Barishal"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+                            android:text="Rangpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="78dp"
+                            android:layout_height="32dp"
+                            android:text="Khulna"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox8"
+                            android:layout_width="119dp"
+                            android:layout_height="32dp"
+                            android:text="Chittagong"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+                        <CheckBox
+                            android:backgroundTint="@color/btn_bg"
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Rnagpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox10"
+                            android:layout_width="135dp"
+                            android:layout_height="38dp"
+                            android:text="Sylhet"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Mymansing"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/monther_layout_profile4"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_show_hide4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+
+                        android:elevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/image_show_hide4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/textView152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Personal Information"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/image_show_hide4"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.432" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/visibility_table_layout4"
+                        android:layout_height="350dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <EditText
+                            android:elevation="4dp"
+                            android:id="@+id/editTextTextPersonName24"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/card_style_radious"
+                            android:drawableRight="@drawable/ic_baseline_search_24"
+                            android:ems="10"
+                            android:hint="Search"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:fontFamily="sans-serif"
+                            android:outlineSpotShadowColor="@color/btn_bg"
+                            android:textColor="@color/black"
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:text="Dhaka"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+
+                            android:text="Barishal"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+                            android:text="Rangpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="78dp"
+                            android:layout_height="32dp"
+                            android:text="Khulna"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox8"
+                            android:layout_width="119dp"
+                            android:layout_height="32dp"
+                            android:text="Chittagong"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+                        <CheckBox
+                            android:backgroundTint="@color/btn_bg"
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Rnagpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox10"
+                            android:layout_width="135dp"
+                            android:layout_height="38dp"
+                            android:text="Sylhet"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Mymansing"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/monther_layout_profile5"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_show_hide5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+
+                        android:elevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/image_show_hide5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/textView152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Marriage Related Information"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/image_show_hide5"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.432" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/visibility_table_layout5"
+                        android:layout_height="350dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <EditText
+                            android:elevation="4dp"
+                            android:id="@+id/editTextTextPersonName24"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/card_style_radious"
+                            android:drawableRight="@drawable/ic_baseline_search_24"
+                            android:ems="10"
+                            android:hint="Search"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:fontFamily="sans-serif"
+                            android:outlineSpotShadowColor="@color/btn_bg"
+                            android:textColor="@color/black"
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:text="Dhaka"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+
+                            android:text="Barishal"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+                            android:text="Rangpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="78dp"
+                            android:layout_height="32dp"
+                            android:text="Khulna"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox8"
+                            android:layout_width="119dp"
+                            android:layout_height="32dp"
+                            android:text="Chittagong"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+                        <CheckBox
+                            android:backgroundTint="@color/btn_bg"
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Rnagpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox10"
+                            android:layout_width="135dp"
+                            android:layout_height="38dp"
+                            android:text="Sylhet"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Mymansing"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/monther_layout_profile6"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_show_hide6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+
+                        android:elevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/image_show_hide6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/textView152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Other Information"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/image_show_hide6"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.432" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/visibility_table_layout6"
+                        android:layout_height="350dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <EditText
+                            android:elevation="4dp"
+                            android:id="@+id/editTextTextPersonName24"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/card_style_radious"
+                            android:drawableRight="@drawable/ic_baseline_search_24"
+                            android:ems="10"
+                            android:hint="Search"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:fontFamily="sans-serif"
+                            android:outlineSpotShadowColor="@color/btn_bg"
+                            android:textColor="@color/black"
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:text="Dhaka"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+
+                            android:text="Barishal"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+                            android:text="Rangpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="78dp"
+                            android:layout_height="32dp"
+                            android:text="Khulna"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox8"
+                            android:layout_width="119dp"
+                            android:layout_height="32dp"
+                            android:text="Chittagong"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+                        <CheckBox
+                            android:backgroundTint="@color/btn_bg"
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Rnagpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox10"
+                            android:layout_width="135dp"
+                            android:layout_height="38dp"
+                            android:text="Sylhet"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Mymansing"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/monther_layout_profile7"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_show_hide7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+
+                        android:elevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/image_show_hide7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/textView152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The life Partner you expect"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/image_show_hide7"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.432" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/visibility_table_layout7"
+                        android:layout_height="350dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <EditText
+                            android:elevation="4dp"
+                            android:id="@+id/editTextTextPersonName24"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/card_style_radious"
+                            android:drawableRight="@drawable/ic_baseline_search_24"
+                            android:ems="10"
+                            android:hint="Search"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:fontFamily="sans-serif"
+                            android:outlineSpotShadowColor="@color/btn_bg"
+                            android:textColor="@color/black"
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:text="Dhaka"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+
+                            android:text="Barishal"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+                            android:text="Rangpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="78dp"
+                            android:layout_height="32dp"
+                            android:text="Khulna"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox8"
+                            android:layout_width="119dp"
+                            android:layout_height="32dp"
+                            android:text="Chittagong"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+                        <CheckBox
+                            android:backgroundTint="@color/btn_bg"
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Rnagpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox10"
+                            android:layout_width="135dp"
+                            android:layout_height="38dp"
+                            android:text="Sylhet"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Mymansing"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/monther_layout_profile8"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_show_hide8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+
+                        android:elevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/image_show_hide8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+                        <TextView
+                              android:layout_marginStart="10dp"
+                            android:id="@+id/textView152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Authority Question"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/image_show_hide8"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/visibility_table_layout8"
+                        android:layout_height="350dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <EditText
+                            android:elevation="4dp"
+                            android:id="@+id/editTextTextPersonName24"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/card_style_radious"
+                            android:drawableRight="@drawable/ic_baseline_search_24"
+                            android:ems="10"
+                            android:hint="Search"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:fontFamily="sans-serif"
+                            android:outlineSpotShadowColor="@color/btn_bg"
+                            android:textColor="@color/black"
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:text="Dhaka"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+
+                            android:text="Barishal"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+                            android:text="Rangpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="78dp"
+                            android:layout_height="32dp"
+                            android:text="Khulna"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox8"
+                            android:layout_width="119dp"
+                            android:layout_height="32dp"
+                            android:text="Chittagong"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+                        <CheckBox
+                            android:backgroundTint="@color/btn_bg"
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Rnagpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox10"
+                            android:layout_width="135dp"
+                            android:layout_height="38dp"
+                            android:text="Sylhet"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Mymansing"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/monther_layout_profile9"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_show_hide9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+
+                        android:elevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/image_show_hide9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+                        <TextView
+                           android:layout_marginStart="10dp"
+                            android:id="@+id/textView152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Request for Contact details"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/image_show_hide9"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.432" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/visibility_table_layout9"
+                        android:layout_height="350dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <EditText
+                            android:elevation="4dp"
+                            android:id="@+id/editTextTextPersonName24"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/card_style_radious"
+                            android:drawableRight="@drawable/ic_baseline_search_24"
+                            android:ems="10"
+                            android:hint="Search"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:fontFamily="sans-serif"
+                            android:outlineSpotShadowColor="@color/btn_bg"
+                            android:textColor="@color/black"
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:text="Dhaka"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+
+                            android:text="Barishal"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:elevation="4dp"
+                            android:text="Rangpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="78dp"
+                            android:layout_height="32dp"
+                            android:text="Khulna"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox8"
+                            android:layout_width="119dp"
+                            android:layout_height="32dp"
+                            android:text="Chittagong"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+                        <CheckBox
+                            android:backgroundTint="@color/btn_bg"
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Rnagpur"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox10"
+                            android:layout_width="135dp"
+                            android:layout_height="38dp"
+                            android:text="Sylhet"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+                        <CheckBox
+                            android:elevation="4dp"
+                            android:id="@+id/checkBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="Mymansing"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+
+
             </LinearLayout>
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
-</LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginRight="25dp"
+        android:background="@drawable/bottom_bar_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView41"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_home"/>
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView39"
+            app:layout_constraintEnd_toStartOf="@+id/imageView42"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView39"
+            app:layout_constraintTop_toTopOf="@+id/imageView39"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_proflile" />
+
+        <ImageView
+            android:id="@+id/imageView42"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView41"
+            app:layout_constraintEnd_toStartOf="@+id/imageView43"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView41"
+            app:layout_constraintTop_toTopOf="@+id/imageView41"
+            app:srcCompat="@drawable/ic_center_badge" />
+
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView42"
+            app:layout_constraintEnd_toStartOf="@+id/imageView44"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView42"
+            app:layout_constraintTop_toTopOf="@+id/imageView42"
+            app:srcCompat="@drawable/ic_status" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView43"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView43"
+            app:layout_constraintTop_toTopOf="@+id/imageView43"
+            app:layout_constraintVertical_bias="0.352"
+            app:srcCompat="@drawable/ic_accounts" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
