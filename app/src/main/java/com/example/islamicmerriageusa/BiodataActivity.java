@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.transition.AutoTransition;
 import androidx.transition.TransitionManager;
-
 import android.animation.LayoutTransition;
 import android.os.Bundle;
 import android.view.View;

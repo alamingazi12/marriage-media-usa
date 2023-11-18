@@ -1,6 +1,8 @@
 package com.example.islamicmerriageusa;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,10 +11,17 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.islamicmerriageusa.adapter.HotelAdapter;
+import com.example.islamicmerriageusa.model.Hotel;
+
+import java.util.ArrayList;
+
 import static com.example.islamicmerriageusa.R.array.*;
 
 public class SearchCommunityActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    String[] country = { "Sponsored", "Most Reviews"};
+    String[] country = {"Sponsored", "Most Reviews"};
+    RecyclerView community_center_container;
+    ArrayList<Hotel> hotel_List;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +39,15 @@ public class SearchCommunityActivity extends AppCompatActivity implements Adapte
                 my_arr,
                 R.layout.my_spinner);
         spin.setAdapter(adapter);
+        inItAll();
+    }
+
+    private void inItAll() {
+        community_center_container=findViewById(R.id.community_centers_container);
+        community_center_container.setHasFixedSize(true);
+        community_center_container.setLayoutManager(new GridLayoutManager(SearchCommunityActivity.this,2));
+        HotelAdapter hotelAdapter=new HotelAdapter(SearchCommunityActivity.this,hotel_List);
+        community_center_container.setAdapter(hotelAdapter);
     }
 
     @Override

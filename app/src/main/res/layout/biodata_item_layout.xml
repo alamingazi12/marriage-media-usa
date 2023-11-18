@@ -117,30 +117,39 @@
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:gravity="center"
                 android:id="@+id/textView133"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:text="TextView"
+                android:text="Marital Status"
                 app:layout_constraintBottom_toTopOf="@+id/textView134"
                 app:layout_constraintEnd_toStartOf="@+id/guideline3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:gravity="center"
                 android:id="@+id/textView134"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:text="TextView"
+                android:text="Birth Year"
                 app:layout_constraintBottom_toTopOf="@+id/textView135"
                 app:layout_constraintEnd_toStartOf="@+id/view26"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView133" />
 
             <TextView
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:gravity="center"
                 android:id="@+id/textView135"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:text="TextView"
+                android:text="Occupation"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/guideline3"
                 app:layout_constraintStart_toStartOf="parent"
@@ -150,7 +159,10 @@
                 android:id="@+id/textView136"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:text="TextView"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="1995"
                 app:layout_constraintBottom_toTopOf="@+id/textView138"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -161,7 +173,10 @@
                 android:id="@+id/textView137"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:text="TextView"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="Married"
                 app:layout_constraintBottom_toTopOf="@+id/textView136"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -169,10 +184,13 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:gravity="center"
                 android:id="@+id/textView138"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:text="TextView"
+                android:text="Job Holder"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"

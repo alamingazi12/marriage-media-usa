@@ -1,73 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="500dp">
+    android:elevation="5dp"
+    android:layout_margin="5dp"
 
-    <ImageView
+    android:background="@drawable/grid_item_style"
+    android:layout_height="280dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageView46"
-        android:layout_width="161dp"
-        android:layout_height="151dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/hotel_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hotel_image" />
+        app:riv_corner_radius="15dp" />
 
     <TextView
         android:id="@+id/textView124"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Nehal Hasan"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView46"
-        app:layout_constraintTop_toTopOf="@+id/imageView46" />
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView46" />
 
     <ImageView
-
         android:id="@+id/imageView47"
-        android:layout_width="197dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="76dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView46"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="55dp"
+        android:layout_height="20dp"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView124"
+        app:layout_constraintTop_toBottomOf="@+id/textView124"
         app:srcCompat="@drawable/rating" />
 
     <TextView
         android:id="@+id/textView125"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
         android:text="5.0"
+        android:layout_marginStart="5dp"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView47"
-        app:layout_constraintStart_toEndOf="@+id/imageView46"
+        app:layout_constraintStart_toEndOf="@+id/imageView47"
         app:layout_constraintTop_toTopOf="@+id/imageView47" />
 
     <TextView
-        android:textStyle="bold"
-        android:textSize="22dp"
-        android:textColor="@color/black"
         android:id="@+id/textView126"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
         android:text="45 Reviews"
-        app:layout_constraintStart_toEndOf="@+id/imageView46"
-        app:layout_constraintTop_toBottomOf="@+id/textView125" />
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView47"
+        app:layout_constraintTop_toBottomOf="@+id/imageView47" />
 
     <ImageView
         android:id="@+id/imageView48"
-        android:layout_width="22dp"
-        android:layout_height="20dp"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
         android:layout_marginLeft="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView126"
         app:layout_constraintStart_toEndOf="@+id/textView126"
@@ -76,111 +86,41 @@
 
     <Button
         android:id="@+id/button14"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Book Now"
         style="@style/button_style_google"
-
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView46" />
-
-    <ImageView
-        android:id="@+id/imageView49"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14"
-        app:srcCompat="@drawable/ic_money" />
-
-    <TextView
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:id="@+id/textView127"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="150"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView49"
-        app:layout_constraintStart_toEndOf="@+id/imageView49"
-        app:layout_constraintTop_toTopOf="@+id/imageView49"
-        app:layout_constraintVertical_bias="0.516" />
-
-    <ImageView
-        android:id="@+id/imageView50"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView49"
-        app:layout_constraintTop_toBottomOf="@+id/imageView49"
-        app:srcCompat="@drawable/ic_home" />
-
-    <TextView
-        android:id="@+id/textView128"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="Jamaica"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView50"
-        app:layout_constraintStart_toEndOf="@+id/imageView50"
-        app:layout_constraintTop_toTopOf="@+id/imageView50"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView51"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView50"
-        app:layout_constraintTop_toBottomOf="@+id/imageView50"
-        app:srcCompat="@drawable/ic_calendar" />
+        android:textSize="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Book Now"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView52"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView51"
-        app:layout_constraintTop_toBottomOf="@+id/imageView51"
+        android:layout_width="18dp"
+        android:layout_height="25dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/textView126"
+        app:layout_constraintTop_toBottomOf="@+id/textView126"
         app:srcCompat="@drawable/ic_location" />
 
     <TextView
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:id="@+id/textView129"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="2023"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView51"
-        app:layout_constraintStart_toEndOf="@+id/imageView51"
-        app:layout_constraintTop_toTopOf="@+id/imageView51" />
-
-    <TextView
         android:id="@+id/textView130"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="New work, 10000, United States"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="5dp"
+        android:text="New work, 10000,hi this is test"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView52"
-        app:layout_constraintStart_toEndOf="@+id/imageView52"
-        app:layout_constraintTop_toBottomOf="@+id/imageView51" />
 
-    <ImageView
-        android:id="@+id/imageView53"
-        android:layout_width="25dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="44dp"
+        android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_love_sign" />
+        app:layout_constraintStart_toEndOf="@+id/imageView52"
+        app:layout_constraintTop_toTopOf="@+id/imageView52" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

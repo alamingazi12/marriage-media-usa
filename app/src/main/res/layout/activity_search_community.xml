@@ -158,7 +158,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="400dp">
+                    android:layout_height="350dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/constraintLayout21"
@@ -295,16 +295,19 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/constraintLayout22" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_margin="30dp"
-                    android:background="@drawable/custom_inner_shadow"
                     android:layout_height="match_parent">
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/community_centers_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
 
-
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>

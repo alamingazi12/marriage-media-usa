@@ -143,6 +143,8 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
+
+                    android:textSize="@dimen/checkbox_text_size"
                     android:fontFamily="sans-serif"
                     android:outlineSpotShadowColor="@color/btn_bg"
                     android:textColor="@color/black"
@@ -157,6 +159,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox6"
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
@@ -167,6 +170,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox5"
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
@@ -176,23 +180,26 @@
                     app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox7"
-                    android:layout_width="78dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="32dp"
                     android:text="Khulna"
                     app:layout_constraintStart_toStartOf="@+id/checkBox5"
                     app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:elevation="4dp"
                     android:id="@+id/checkBox8"
-                    android:layout_width="119dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="32dp"
                     android:text="Chittagong"
                     app:layout_constraintStart_toStartOf="@+id/checkBox7"
                     app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:backgroundTint="@color/btn_bg"
                     android:elevation="4dp"
                     android:id="@+id/checkBox9"
@@ -203,15 +210,17 @@
                     app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:elevation="4dp"
                     android:id="@+id/checkBox10"
-                    android:layout_width="135dp"
-                    android:layout_height="38dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
                     android:text="Sylhet"
                     app:layout_constraintStart_toStartOf="@+id/checkBox9"
                     app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:elevation="4dp"
                     android:id="@+id/checkBox11"
                     android:layout_width="wrap_content"
@@ -291,11 +300,13 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
+
                         android:id="@+id/checkBox12"
                         android:layout_width="wrap_content"
                         android:layout_height="32dp"
                         android:layout_marginStart="16dp"
                         android:text="Male"
+                        android:textSize="@dimen/checkbox_text_size"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox13"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -306,6 +317,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:text="Female"
+                        android:textSize="@dimen/checkbox_text_size"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/checkBox12"
                         app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
@@ -383,6 +395,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
+                        android:textSize="@dimen/checkbox_text_size"
                         android:id="@+id/checkBox12"
                         android:layout_width="wrap_content"
                         android:layout_height="32dp"
@@ -394,6 +407,7 @@
                         app:layout_constraintVertical_chainStyle="packed" />
 
                     <CheckBox
+                        android:textSize="@dimen/checkbox_text_size"
                         android:id="@+id/checkBox13"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
@@ -475,6 +489,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
+                        android:textSize="@dimen/checkbox_text_size"
                         android:id="@+id/checkBox12"
                         android:layout_width="wrap_content"
                         android:layout_height="31dp"
@@ -484,6 +499,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/checkBox14" />
 
                     <CheckBox
+                        android:textSize="@dimen/checkbox_text_size"
                         android:id="@+id/checkBox13"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
@@ -493,6 +509,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
 
                     <CheckBox
+                        android:textSize="@dimen/checkbox_text_size"
                         android:id="@+id/checkBox14"
                         android:layout_width="wrap_content"
                         android:layout_height="31dp"
@@ -504,6 +521,7 @@
                         app:layout_constraintVertical_bias="0.0" />
 
                     <CheckBox
+                        android:textSize="@dimen/checkbox_text_size"
                         android:id="@+id/checkBox15"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
@@ -514,6 +532,7 @@
                         app:layout_constraintVertical_chainStyle="packed" />
 
                     <CheckBox
+                        android:textSize="@dimen/checkbox_text_size"
                         android:id="@+id/checkBox16"
                         android:layout_width="wrap_content"
                         android:layout_height="31dp"
@@ -586,6 +605,8 @@
                 app:layout_constraintVertical_bias="0.0">
 
                 <CheckBox
+
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox4"
                     android:layout_width="75dp"
                     android:layout_height="30dp"
@@ -597,6 +618,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox6"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
@@ -606,6 +628,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox5"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
@@ -615,6 +638,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox7"
                     android:layout_width="78dp"
                     android:layout_height="30dp"
@@ -623,6 +647,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox8"
                     android:layout_width="119dp"
                     android:layout_height="30dp"
@@ -698,8 +723,9 @@
 
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox4"
-                    android:layout_width="75dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="36dp"
                     android:layout_marginStart="15dp"
 
@@ -710,24 +736,27 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox6"
                     android:layout_width="wrap_content"
-                    android:layout_height="36dp"
+                    android:layout_height="32dp"
                     android:elevation="4dp"
                     android:text="Engineer"
                     app:layout_constraintStart_toStartOf="@+id/checkBox4"
                     app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox5"
                     android:layout_width="wrap_content"
-                    android:layout_height="36dp"
+                    android:layout_height="32dp"
                     android:elevation="4dp"
                     android:text="Business Man"
                     app:layout_constraintStart_toStartOf="@+id/checkBox6"
                     app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox7"
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
@@ -736,8 +765,9 @@
                     app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
 
                 <CheckBox
+                    android:textSize="@dimen/checkbox_text_size"
                     android:id="@+id/checkBox8"
-                    android:layout_width="119dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="Govt Service"
                     app:layout_constraintStart_toStartOf="@+id/checkBox7"

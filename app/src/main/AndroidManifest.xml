@@ -10,20 +10,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
+        <activity android:name=".PrivacyActivity"></activity>
         <activity android:name=".FilterActivity">
+
         </activity>
-        <activity android:name=".SearchCommunityActivity"></activity>
-        <activity android:name=".FullBiodataActivity"></activity>
-        <activity android:name=".SearchBiodataActivity" />
-        <activity android:name=".BookingCommunityActivity" />
-        <activity android:name=".BookingActivity" />
-        <activity android:name=".ContactActivity" />
-        <activity android:name=".BiodataActivity" android:exported="true">
+        <activity android:name=".SearchCommunityActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".FullBiodataActivity" />
+        <activity android:name=".SearchBiodataActivity" />
+        <activity android:name=".BookingCommunityActivity" />
+        <activity android:name=".BookingActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity
+            android:name=".BiodataActivity"
+            >
+
         </activity>
         <activity android:name=".ChoosePlanActivity" />
         <activity android:name=".SingleProductActivity" />
@@ -33,7 +39,9 @@
         <activity android:name=".HelpActivity" />
         <activity android:name=".AccountSettingActivity" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".MessageActivity" />
+        <activity android:name=".MessageActivity">
+
+        </activity>
         <activity android:name=".NewCardActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".AddCardActivity" />
@@ -43,11 +51,7 @@
         <activity android:name=".FreePlanActivity" />
         <activity android:name=".PlanActivity" />
         <activity android:name=".ReviewActivity" />
-        <activity
-            android:name=".OnBoardActivity"
-            >
-
-        </activity>
+        <activity android:name=".OnBoardActivity"></activity>
         <activity android:name=".SearchActivity" />
         <activity android:name=".RessetPassActivity" />
         <activity android:name=".ForgetPassActivity" />

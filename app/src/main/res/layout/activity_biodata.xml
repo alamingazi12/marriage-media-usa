@@ -160,7 +160,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        app:layout_constraintGuide_begin="185dp" />
+                        app:layout_constraintGuide_end="186dp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -176,7 +176,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginRight="30dp"
 
                         android:elevation="4dp"
@@ -209,10 +209,15 @@
                             app:layout_constraintVertical_bias="0.432" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
                         android:id="@+id/visibility_table_layout"
-                        android:layout_height="350dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/card_style_radious"
                         android:visibility="gone"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -221,104 +226,163 @@
                         app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
                         app:layout_constraintVertical_bias="0.0">
 
-                        <EditText
-                            android:elevation="4dp"
-                            android:id="@+id/editTextTextPersonName24"
-                            android:layout_width="0dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginEnd="30dp"
-                            android:background="@drawable/card_style_radious"
-                            android:drawableRight="@drawable/ic_baseline_search_24"
-                            android:ems="10"
-                            android:hint="Search"
-                            android:inputType="textPersonName"
-                            android:padding="15dp"
+
+                        <View
+                            android:id="@+id/view43"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/view_color"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName26" />
+
+                        <View
+                            android:id="@+id/view47"
+                            android:layout_width="371dp"
+                            android:layout_height="1dp"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName28" />
+
+                        <View
+                            android:id="@+id/view48"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName29" />
+
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName25"
+                            android:layout_width="0dp"
+                            android:layout_height="47dp"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:text="Permant Address"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <CheckBox
-                            android:fontFamily="sans-serif"
-                            android:outlineSpotShadowColor="@color/btn_bg"
-                            android:textColor="@color/black"
-                            android:id="@+id/checkBox4"
+                        <androidx.constraintlayout.widget.Barrier
+                            android:id="@+id/barrier2"
                             android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:layout_marginStart="32dp"
-                            android:layout_marginTop="8dp"
-                            android:elevation="4dp"
-                            android:text="Dhaka"
+                            android:layout_height="wrap_content"
+                            app:barrierDirection="left"
+                            app:constraint_referenced_ids="editTextTextPersonName25" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.50" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName26"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:backgroundTint="@color/white"
+                            android:inputType="textMultiLine"
+                            android:text="Khulna,Phultala,my name is alamin gazi"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName25"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName27"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="Present Address"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName26" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:elevation="4dp"
+                        <EditText
+                            android:id="@+id/editTextTextPersonName28"
+                            android:layout_width="0dp"
+                            android:layout_height="49dp"
+                            android:ems="10"
 
-                            android:text="Barishal"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+                            android:backgroundTint="@color/white"
+                            android:inputType="textMultiLine"
+                            android:text="Phultala,Khulna,Bangladesh"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline7"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName26" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:elevation="4dp"
-                            android:text="Rangpur"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+                        <EditText
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName29"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="Where grown up?"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName27" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox7"
-                            android:layout_width="78dp"
-                            android:layout_height="32dp"
-                            android:text="Khulna"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+                        <EditText
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName30"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="Ashkona Bazar"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline7"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName28" />
 
-                        <CheckBox
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox8"
-                            android:layout_width="119dp"
-                            android:layout_height="32dp"
-                            android:text="Chittagong"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+                        <EditText
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName31"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="where to settle?"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName29" />
 
-                        <CheckBox
-                            android:backgroundTint="@color/btn_bg"
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:text="Rnagpur"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+                        <EditText
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName32"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
 
-                        <CheckBox
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox10"
-                            android:layout_width="135dp"
-                            android:layout_height="38dp"
-                            android:text="Sylhet"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+                            android:inputType="textPersonName"
+                            android:text="Mirpur-2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline7"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName30" />
 
-                        <CheckBox
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:text="Mymansing"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+                        <View
+                            android:id="@+id/view49"
+                            android:layout_width="1dp"
+                            android:layout_height="0dp"
+                            android:background="@color/view_color"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
                 </LinearLayout>
                 <LinearLayout
 
@@ -332,7 +396,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginRight="30dp"
 
                         android:elevation="4dp"
@@ -487,7 +551,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginRight="30dp"
 
                         android:elevation="4dp"
@@ -643,7 +707,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginRight="30dp"
 
                         android:elevation="4dp"
@@ -798,7 +862,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginRight="30dp"
 
                         android:elevation="4dp"
@@ -953,7 +1017,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginRight="30dp"
 
                         android:elevation="4dp"
@@ -1108,7 +1172,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginRight="30dp"
 
                         android:elevation="4dp"
@@ -1263,7 +1327,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginRight="30dp"
 
                         android:elevation="4dp"
@@ -1418,7 +1482,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginRight="30dp"
 
                         android:elevation="4dp"
