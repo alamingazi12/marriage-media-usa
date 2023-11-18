@@ -24,4 +24,16 @@
         <item>Most Reviews</item>
 
     </string-array>
+
+    <string-array name="gender">
+        <item>Man</item>
+        <item>Woman</item>
+
+    </string-array>
+
+    <string-array name="marit_status">
+        <item>Married</item>
+        <item>Unmarried</item>
+
+    </string-array>
 </resources>
