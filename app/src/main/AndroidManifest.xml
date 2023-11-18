@@ -14,15 +14,16 @@
         <activity android:name=".FilterActivity">
 
         </activity>
-        <activity android:name=".SearchCommunityActivity" android:exported="true">
+        <activity android:name=".SearchCommunityActivity">
+
+        </activity>
+        <activity android:name=".FullBiodataActivity" />
+        <activity android:name=".SearchBiodataActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FullBiodataActivity" />
-        <activity android:name=".SearchBiodataActivity" />
         <activity android:name=".BookingCommunityActivity" />
         <activity android:name=".BookingActivity" />
         <activity android:name=".ContactActivity" />
