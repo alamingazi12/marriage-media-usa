@@ -8,20 +8,21 @@
     tools:context=".MainActivity">
 
     <androidx.core.widget.NestedScrollView
-        android:fitsSystemWindows="true"
-
-        android:fillViewport="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
         <LinearLayout
-            android:fitsSystemWindows="true"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="1300dp"
                 android:layout_margin="30dp"
                 android:background="@drawable/layout_style">
 
@@ -29,12 +30,11 @@
                     android:id="@+id/view31"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="80dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view10" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName47" />
 
                 <View
 
@@ -42,12 +42,12 @@
                     android:id="@+id/view30"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="168dp"
+
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view19" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName59" />
 
                 <View
 
@@ -55,12 +55,11 @@
                     android:id="@+id/view29"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="140dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view19" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName54" />
 
                 <View
 
@@ -68,12 +67,11 @@
                     android:id="@+id/view28"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="112dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view19" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName57" />
 
                 <View
 
@@ -81,12 +79,12 @@
                     android:id="@+id/view23"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="188dp"
+                    android:layout_marginTop="36dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view19" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName61" />
 
                 <View
 
@@ -94,12 +92,12 @@
                     android:id="@+id/view22"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="80dp"
+                    android:layout_marginTop="36dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view19" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName56" />
 
                 <View
 
@@ -107,12 +105,11 @@
                     android:id="@+id/view21"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="52dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view19" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName63" />
 
                 <View
 
@@ -120,12 +117,11 @@
                     android:id="@+id/view20"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="28dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view19" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName54" />
 
                 <View
 
@@ -133,117 +129,107 @@
                     android:id="@+id/view19"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="32dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view17" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName53" />
 
                 <View
 
                     android:id="@+id/view18"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="24dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view14" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName49" />
 
                 <View
 
                     android:id="@+id/view17"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="32dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view15" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName52" />
 
                 <View
 
                     android:id="@+id/view16"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="20dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view18" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName50" />
 
                 <View
 
                     android:id="@+id/view15"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="24dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view16" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName51" />
 
                 <View
 
                     android:id="@+id/view14"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="36dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view12" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName48" />
 
                 <View
 
                     android:id="@+id/view12"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="52dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view11" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName46" />
 
                 <View
                     android:id="@+id/view11"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="52dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view10" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName45" />
 
                 <View
                     android:id="@+id/view10"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="48dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view9" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName44" />
 
                 <View
                     android:id="@+id/view9"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:layout_marginTop="48dp"
                     android:background="@color/view_color"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view8" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName43" />
 
                 <View
                     android:id="@+id/view8"
@@ -253,7 +239,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView140" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName41" />
 
                 <View
                     android:id="@+id/view13"
@@ -272,18 +258,475 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_percent="0.5" />
 
+
                 <EditText
-                    android:backgroundTint="@color/white"
-                    android:textColor="@color/black"
-                    android:padding="3dp"
-                    android:textSize="20dp"
-                    android:id="@+id/textView140"
+                    android:minHeight="45dp"
+                    android:id="@+id/editTextTextPersonName41"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="My Name is alex Joe and i am a software Engineer"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView128"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:gravity="left|center"
+                    android:text="Prayer Time"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName41"
                     app:layout_constraintEnd_toStartOf="@+id/guideline4"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView129"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:gravity="left|center"
+                    android:text="How long praying?"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName43"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView128" />
+
+                <EditText
+                    android:minHeight="45dp"
+                    android:id="@+id/editTextTextPersonName43"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName41" />
+
+                <EditText
+                    android:minHeight="45dp"
+                    android:id="@+id/editTextTextPersonName44"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Yes"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName43" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView140"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:gravity="left|center"
+                    android:text="Have Beard?"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName44"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView129" />
+
+                <EditText
+                    android:minHeight="45dp"
+                    android:id="@+id/editTextTextPersonName45"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName44" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView156"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:gravity="left|center"
+                    android:text="About Clothing"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName45"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView140" />
+
+                <EditText
+                    android:minHeight="45dp"
+                    android:id="@+id/editTextTextPersonName46"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="left|center"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName45" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView157"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:gravity="left|center"
+                    android:text="Cloth or ankles"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName46"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView156" />
+
+                <EditText
+                    android:minHeight="60dp"
+                    android:id="@+id/editTextTextPersonName47"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName46" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView158"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center"
+                    android:text="About Mahram and \nNon Mahram"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName47"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView157" />
+
+                <EditText
+                    android:minHeight="60dp"
+                    android:id="@+id/editTextTextPersonName48"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName47" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView159"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center"
+                    android:text="Recite the quran \n correctly"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName48"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName48"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view31" />
+
+                <EditText
+                    android:minHeight="45dp"
+                    android:id="@+id/editTextTextPersonName49"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName48" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView160"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:gravity="center|left"
+                    android:text="Follow any Madhab?"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName49"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view14" />
+
+                <EditText
+                    android:minHeight="70dp"
+                    android:id="@+id/editTextTextPersonName50"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName49" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView164"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Involved any\n Political Organization ? "
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName50"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view18" />
+
+                <EditText
+                    android:minHeight="80dp"
+                    android:id="@+id/editTextTextPersonName51"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/view13"
+                    app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView169"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:text="Watch or listen to drama,movie,serial,songs?"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName51"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+                <EditText
+                    android:minHeight="60dp"
+                    android:id="@+id/editTextTextPersonName52"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName51" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView177"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:text="Have any mental \n or physical desesse?"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName52"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView169" />
+
+                <EditText
+                    android:minHeight="70dp"
+                    android:id="@+id/editTextTextPersonName53"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName52" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView179"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:text="Involved with a \n spritual person or any organization ?"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName53"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view17" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName54"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    android:inputType="textPersonName"
+                    android:minHeight="60dp"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName53" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName56"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/view21" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName57"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/view22" />
+
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName58"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/view28" />
+
+                <TextView
+                    android:id="@+id/textView184"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="TextView"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName58"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view28" />
+
+                <EditText
+                    android:minHeight="60dp"
+                    android:id="@+id/editTextTextPersonName59"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/view29" />
+
+                <TextView
+                    android:id="@+id/textView185"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="TextView"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName59"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView184" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName61"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    tools:layout_editor_absoluteY="860dp" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName62"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"
+                    android:layout_marginBottom="16dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName58" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView197"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="Idea of belief about islam"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName54"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="@+id/view19"
+                    app:layout_constraintTop_toBottomOf="@+id/textView179" />
+
+                <TextView
+
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView198"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:text="Favourite book\nname"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName59"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view29" />
+
+                <EditText
+                    android:minHeight="60dp"
+                    android:id="@+id/editTextTextPersonName63"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView198"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName59" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_point5dp"
+                    android:textSize="@dimen/table_item_text_size"
+                    android:id="@+id/textView199"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:text="Favourite Person\nname"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName56"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view30" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
