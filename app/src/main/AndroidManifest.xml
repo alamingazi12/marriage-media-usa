@@ -18,19 +18,19 @@
 
         </activity>
         <activity android:name=".FullBiodataActivity" />
-        <activity android:name=".SearchBiodataActivity" android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".SearchBiodataActivity">
+
         </activity>
         <activity android:name=".BookingCommunityActivity" />
         <activity android:name=".BookingActivity" />
         <activity android:name=".ContactActivity" />
         <activity
             android:name=".BiodataActivity"
-            >
-
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".ChoosePlanActivity" />
         <activity android:name=".SingleProductActivity" />
@@ -60,7 +60,9 @@
         <activity android:name=".ChengePassActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity">
+
+        </activity>
     </application>
 
 </manifest>
