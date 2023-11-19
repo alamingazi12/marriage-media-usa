@@ -6,20 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <EditText
-        android:gravity="fill"
-        android:background="@drawable/edittext_style"
-        android:padding="10dp"
-        android:minHeight="100dp"
-        android:inputType="textMultiLine"
-        android:text="This will add another level in the hyerarchy, while better design guidelines say to flatten your designs as
-This will add another level in the hyerarchy, while better design guidelines say to flatten your designs as"
-        android:layout_margin="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+
     <androidx.core.widget.NestedScrollView
         android:fitsSystemWindows="true"
-        android:visibility="gone"
+
         android:fillViewport="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent">

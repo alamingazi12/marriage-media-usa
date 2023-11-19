@@ -639,10 +639,15 @@
                             app:layout_constraintVertical_bias="0.432" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
                         android:id="@+id/visibility_table_layout3"
-                        android:layout_height="350dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/card_style_radious"
                         android:visibility="gone"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -651,102 +656,338 @@
                         app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
                         app:layout_constraintVertical_bias="0.0">
 
-                        <EditText
-                            android:elevation="4dp"
-                            android:id="@+id/editTextTextPersonName24"
+
+                        <View
+                            android:id="@+id/view43"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName26" />
+
+
+                        <View
+                            android:id="@+id/view48"
                             android:layout_width="0dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginEnd="30dp"
-                            android:background="@drawable/card_style_radious"
-                            android:drawableRight="@drawable/ic_baseline_search_24"
-                            android:ems="10"
-                            android:hint="Search"
-                            android:inputType="textPersonName"
-                            android:padding="15dp"
+                            android:layout_height="2dp"
+                            android:background="@color/view_color"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName28" />
+
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName25"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="@dimen/size_point5dp"
+                            android:text="Permant Address"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName26"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <androidx.constraintlayout.widget.Barrier
+                            android:id="@+id/barrier2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:barrierDirection="left"
+                            app:constraint_referenced_ids="editTextTextPersonName25" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.50" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName26"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:minHeight="47dp"
+                            android:paddingLeft="@dimen/size_point5dp"
+                            android:text="Khulna,Phultala,my name is alamin gazi"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName25"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <CheckBox
-                            android:fontFamily="sans-serif"
-                            android:outlineSpotShadowColor="@color/btn_bg"
-                            android:textColor="@color/black"
-                            android:id="@+id/checkBox4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:layout_marginStart="32dp"
-                            android:layout_marginTop="8dp"
-                            android:elevation="4dp"
-                            android:text="Dhaka"
+                        <View
+                            android:id="@+id/view49"
+                            android:layout_width="2dp"
+                            android:layout_height="0dp"
+                            android:background="@color/view_color"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:elevation="4dp"
+                        <View
+                            android:id="@+id/view44"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName31" />
 
-                            android:text="Barishal"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+                        <EditText
+                            android:id="@+id/editTextTextPersonName27"
+                            android:layout_width="0dp"
+                            android:layout_height="52dp"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="@dimen/size_point5dp"
+                            android:text="Present Address"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName28"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName29" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:elevation="4dp"
-                            android:text="Rangpur"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+                        <EditText
+                            android:id="@+id/editTextTextPersonName28"
+                            android:layout_width="0dp"
+                            android:layout_height="47dp"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="Gazipur Dhaka"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline7"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName26" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox7"
-                            android:layout_width="78dp"
-                            android:layout_height="32dp"
-                            android:text="Khulna"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
 
-                        <CheckBox
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox8"
-                            android:layout_width="119dp"
-                            android:layout_height="32dp"
-                            android:text="Chittagong"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+                        <EditText
+                            android:id="@+id/editTextTextPersonName30"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="where grown up?"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName31"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintStart_toEndOf="@+id/view49"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName28" />
 
-                        <CheckBox
-                            android:backgroundTint="@color/btn_bg"
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:text="Rnagpur"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+                        <EditText
+                            android:id="@+id/editTextTextPersonName31"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:minHeight="50dp"
+                            android:paddingLeft="@dimen/size_point5dp"
+                            android:text="Ashkona Bazar"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline7"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName28" />
 
-                        <CheckBox
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox10"
-                            android:layout_width="135dp"
-                            android:layout_height="38dp"
-                            android:text="Sylhet"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+                        <EditText
+                            android:id="@+id/editTextTextPersonName32"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
 
-                        <CheckBox
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:text="Mymansing"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+                            android:inputType="textPersonName"
+                            android:minHeight="52dp"
+                            android:paddingLeft="@dimen/size_point5dp"
+                            android:text="Mirpur 2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline7"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName31" />
+
+                        <View
+                            android:id="@+id/view47"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/view_color"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName32" />
+
+                        <View
+                            android:id="@+id/view50"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName34" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName34"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:minHeight="50dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/view49"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName32" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName35"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="Name"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName31"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName27" />
+
+                        <View
+                            android:id="@+id/view51"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName36" />
+
+                        <View
+                            android:id="@+id/view52"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName38" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName36"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:minHeight="90dp"
+                            android:text="No"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline7"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName34" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/editTextTextPersonName37"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:ems="10"
+                            android:text="How many Sisters?"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName32"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName35" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName38"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+
+                            android:inputType="textPersonName"
+                            android:minHeight="70dp"
+                            android:text="No"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline7"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName36" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName39"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="Uncel,Unty,Occupations"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName34"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName37" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName40"
+                            android:layout_width="0dp"
+                            android:layout_height="90dp"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:text="Economic Social status of your Family"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName36"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName39" />
+
+                        <TextView
+                            android:id="@+id/textView127"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:gravity="center"
+                            android:text="Uncle,Unty \n Occupation"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+                            app:layout_constraintEnd_toStartOf="@+id/view49"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName40" />
+
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName42"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:backgroundTint="@color/white"
+                            android:minHeight="70dp"
+                            android:inputType="textPersonName"
+                            android:text="Middle Class"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/view49"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName38" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:id="@+id/textView155"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="8dp"
+                            android:textSize="17dp"
+                            android:text="Economic,Social status of your family"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView127" />
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
