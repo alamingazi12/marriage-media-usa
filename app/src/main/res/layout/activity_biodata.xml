@@ -679,17 +679,16 @@
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName28" />
 
 
-                        <EditText
+                        <TextView
                             android:id="@+id/editTextTextPersonName25"
                             android:layout_width="0dp"
                             android:layout_height="0dp"
-                            android:backgroundTint="@color/white"
                             android:ems="10"
                             android:inputType="textMultiLine"
                             android:paddingLeft="@dimen/size_point5dp"
-                            android:text="Permant Address"
+                            android:text="Father Name"
                             android:textColor="@color/black"
-                            android:textSize="16dp"
+                            android:gravity="center|left"
                             android:textStyle="bold"
                             app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName26"
                             app:layout_constraintEnd_toStartOf="@+id/guideline7"
@@ -713,13 +712,14 @@
                             app:layout_constraintGuide_percent="0.50" />
 
                         <EditText
+                            android:textSize="@dimen/table_item_text_size"
                             android:id="@+id/editTextTextPersonName26"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/white"
                             android:ems="10"
                             android:inputType="textMultiLine"
-                            android:minHeight="47dp"
+                            android:minHeight="45dp"
                             android:paddingLeft="@dimen/size_point5dp"
                             android:text="Khulna,Phultala,my name is alamin gazi"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -746,27 +746,32 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName31" />
 
-                        <EditText
+                        <TextView
                             android:id="@+id/editTextTextPersonName27"
                             android:layout_width="0dp"
-                            android:layout_height="52dp"
+                            android:layout_height="0dp"
                             android:backgroundTint="@color/white"
                             android:ems="10"
                             android:inputType="textPersonName"
                             android:paddingLeft="@dimen/size_point5dp"
-                            android:text="Present Address"
+                            android:text="Mother Name"
+                            android:textColor="@color/black"
+                            android:gravity="center|left"
                             android:textStyle="bold"
+
                             app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName28"
                             app:layout_constraintEnd_toStartOf="@+id/guideline7"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName29" />
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName25" />
 
                         <EditText
+                            android:textSize="@dimen/table_item_text_size"
                             android:id="@+id/editTextTextPersonName28"
                             android:layout_width="0dp"
-                            android:layout_height="47dp"
+                            android:layout_height="wrap_content"
                             android:backgroundTint="@color/white"
                             android:ems="10"
+                            android:minHeight="45dp"
                             android:inputType="textPersonName"
                             android:text="Gazipur Dhaka"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -789,6 +794,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName28" />
 
                         <EditText
+                            android:textSize="@dimen/table_item_text_size"
                             android:id="@+id/editTextTextPersonName31"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -803,6 +809,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName28" />
 
                         <EditText
+                            android:textSize="@dimen/table_item_text_size"
                             android:id="@+id/editTextTextPersonName32"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -838,26 +845,31 @@
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName34" />
 
                         <EditText
+                            android:textSize="@dimen/table_item_text_size"
                             android:id="@+id/editTextTextPersonName34"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/white"
                             android:ems="10"
                             android:inputType="textPersonName"
-                            android:minHeight="50dp"
+                            android:minHeight="70dp"
                             android:text="Name"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/view49"
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName32" />
 
-                        <EditText
+                        <TextView
                             android:id="@+id/editTextTextPersonName35"
                             android:layout_width="0dp"
                             android:layout_height="50dp"
                             android:backgroundTint="@color/white"
                             android:ems="10"
                             android:inputType="textPersonName"
-                            android:text="Name"
+                            android:paddingLeft="@dimen/size_point5dp"
+                            android:text="Father Occupation"
+                            android:textColor="@color/black"
+                            android:gravity="center|left"
+                            android:textStyle="bold"
                             app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName31"
                             app:layout_constraintEnd_toStartOf="@+id/guideline7"
                             app:layout_constraintHorizontal_bias="0.0"
@@ -883,6 +895,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName38" />
 
                         <EditText
+                            android:textSize="@dimen/table_item_text_size"
                             android:id="@+id/editTextTextPersonName36"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -896,18 +909,23 @@
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName34" />
 
                         <TextView
-                            android:gravity="center"
+
                             android:id="@+id/editTextTextPersonName37"
                             android:layout_width="0dp"
                             android:layout_height="0dp"
                             android:ems="10"
-                            android:text="How many Sisters?"
+                            android:paddingLeft="@dimen/size_point5dp"
+                            android:text="Mother Occupation"
+                            android:textColor="@color/black"
+                            android:gravity="center|left"
+                            android:textStyle="bold"
                             app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName32"
                             app:layout_constraintEnd_toStartOf="@+id/guideline7"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName35" />
 
                         <EditText
+                            android:textSize="@dimen/table_item_text_size"
                             android:id="@+id/editTextTextPersonName38"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -921,27 +939,35 @@
                             app:layout_constraintStart_toStartOf="@+id/guideline7"
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName36" />
 
-                        <EditText
+                        <TextView
                             android:id="@+id/editTextTextPersonName39"
                             android:layout_width="0dp"
                             android:layout_height="0dp"
                             android:backgroundTint="@color/white"
                             android:ems="10"
+                            android:paddingLeft="@dimen/size_point5dp"
+                            android:textColor="@color/black"
+                            android:gravity="center|left"
+                            android:textStyle="bold"
                             android:inputType="textPersonName"
-                            android:text="Uncel,Unty,Occupations"
+                            android:text="Uncle,Unty\noccupation"
+
                             app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName34"
                             app:layout_constraintEnd_toStartOf="@+id/guideline7"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName37" />
 
-                        <EditText
+                        <TextView
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/black"
+                            android:gravity="center|left"
+                            android:textStyle="bold"
                             android:id="@+id/editTextTextPersonName40"
                             android:layout_width="0dp"
-                            android:layout_height="90dp"
+                            android:layout_height="0dp"
                             android:backgroundTint="@color/white"
                             android:ems="10"
-                            android:inputType="textMultiLine"
-                            android:text="Economic Social status of your Family"
+                            android:text="Economic Social\nstatus of your Family"
                             app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName36"
                             app:layout_constraintEnd_toStartOf="@+id/guideline7"
                             app:layout_constraintStart_toStartOf="parent"
@@ -950,17 +976,21 @@
                         <TextView
                             android:id="@+id/textView127"
                             android:layout_width="0dp"
-                            android:layout_height="70dp"
-                            android:gravity="center"
-                            android:text="Uncle,Unty \n Occupation"
+                            android:layout_height="0dp"
+                            android:gravity="left|center"
+                            android:paddingLeft="@dimen/size_point5dp"
+                            android:text="Uncle,Unty \nOccupation"
                             android:textColor="@color/black"
-                            android:textSize="17dp"
+                            android:textSize="@dimen/table_item_text_size"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName38"
                             app:layout_constraintEnd_toStartOf="@+id/view49"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName40" />
 
 
                         <EditText
+                            android:textSize="@dimen/table_item_text_size"
                             android:id="@+id/editTextTextPersonName42"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -974,14 +1004,15 @@
                             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName38" />
 
                         <TextView
-                            android:gravity="center"
+                            android:paddingLeft="@dimen/size_point5dp"
+                            android:textStyle="bold"
+                            android:gravity="center|left"
                             android:textColor="@color/black"
                             android:id="@+id/textView155"
                             android:layout_width="0dp"
-                            android:layout_height="70dp"
-                            android:layout_marginStart="5dp"
+                            android:layout_height="0dp"
                             android:layout_marginEnd="8dp"
-                            android:textSize="17dp"
+                            android:textSize="@dimen/table_item_text_size"
                             android:text="Economic,Social status of your family"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/guideline7"
@@ -1038,111 +1069,785 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:id="@+id/visibility_table_layout4"
-                        android:layout_height="350dp"
-                        android:visibility="gone"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="1.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout20"
-                        app:layout_constraintVertical_bias="0.0">
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:visibility="visible"
+                        android:background="@drawable/layout_style">
 
-                        <EditText
-                            android:elevation="4dp"
-                            android:id="@+id/editTextTextPersonName24"
-                            android:layout_width="0dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginEnd="30dp"
-                            android:background="@drawable/card_style_radious"
-                            android:drawableRight="@drawable/ic_baseline_search_24"
-                            android:ems="10"
-                            android:hint="Search"
-                            android:inputType="textPersonName"
-                            android:padding="15dp"
+                        <View
+                            android:id="@+id/view31"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName47" />
+
+                        <View
+
+
+                            android:id="@+id/view30"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName59" />
+
+                        <View
+
+
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName54" />
+
+                        <View
+
+
+                            android:id="@+id/view28"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName57" />
+
+
+
+                        <View
+
+
+                            android:id="@+id/view22"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName56" />
+
+                        <View
+
+
+                            android:id="@+id/view21"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName63" />
+
+                        <View
+
+
+                            android:id="@+id/view20"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName54" />
+
+                        <View
+
+
+                            android:id="@+id/view19"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName53" />
+
+                        <View
+
+                            android:id="@+id/view18"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName49" />
+
+                        <View
+
+                            android:id="@+id/view17"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName52" />
+
+                        <View
+
+                            android:id="@+id/view16"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName50" />
+
+                        <View
+
+                            android:id="@+id/view15"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName51" />
+
+                        <View
+
+                            android:id="@+id/view14"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName48" />
+
+                        <View
+
+                            android:id="@+id/view12"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName46" />
+
+                        <View
+                            android:id="@+id/view11"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName45" />
+
+                        <View
+                            android:id="@+id/view10"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName44" />
+
+                        <View
+                            android:id="@+id/view9"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName43" />
+
+                        <View
+                            android:id="@+id/view8"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_width"
+                            android:background="@color/view_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName41" />
+
+                        <View
+                            android:id="@+id/view13"
+                            android:layout_width="@dimen/view_width"
+                            android:layout_height="0dp"
+                            android:background="@color/view_color"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <CheckBox
-                            android:fontFamily="sans-serif"
-                            android:outlineSpotShadowColor="@color/btn_bg"
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.5" />
+
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName41"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="45dp"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView128"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="left|center"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Prayer Time"
                             android:textColor="@color/black"
-                            android:id="@+id/checkBox4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:layout_marginStart="32dp"
-                            android:layout_marginTop="8dp"
-                            android:elevation="4dp"
-                            android:text="Dhaka"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName41"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:elevation="4dp"
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView129"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="left|center"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="How long praying?"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName43"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintHorizontal_bias="0.504"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView128" />
 
-                            android:text="Barishal"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox4"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName43"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="45dp"
+                            android:text="yes"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName41" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:elevation="4dp"
-                            android:text="Rangpur"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName44"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="45dp"
+                            android:text="Yes"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName43" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox7"
-                            android:layout_width="78dp"
-                            android:layout_height="32dp"
-                            android:text="Khulna"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox5"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView140"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="left|center"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Have Beard?"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName44"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView129" />
 
-                        <CheckBox
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox8"
-                            android:layout_width="119dp"
-                            android:layout_height="32dp"
-                            android:text="Chittagong"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox7"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName45"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="45dp"
+                            android:text="yes"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName44" />
 
-                        <CheckBox
-                            android:backgroundTint="@color/btn_bg"
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:text="Rnagpur"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox8"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView156"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="left|center"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="About Clothing"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName45"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView140" />
 
-                        <CheckBox
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox10"
-                            android:layout_width="135dp"
-                            android:layout_height="38dp"
-                            android:text="Sylhet"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox9"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName46"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="left|center"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="45dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName45" />
 
-                        <CheckBox
-                            android:elevation="4dp"
-                            android:id="@+id/checkBox11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:text="Mymansing"
-                            app:layout_constraintStart_toStartOf="@+id/checkBox10"
-                            app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView157"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="left|center"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Cloth or ankles"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName46"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView156" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName47"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="70dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName46" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView158"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="left|center"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="About Mahram and \nNon Mahram"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName47"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView157" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName48"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="60dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName47" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView159"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="left|center"
+                            android:text="Recite the quran \n correctly"
+                            android:padding="@dimen/size_point5dp"
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName48"
+                            app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName48"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view31" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName49"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="45dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName48" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView160"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="center|left"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Follow any Madhab?"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName49"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view14" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName50"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="70dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName49" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView164"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Involved any Political\n Organization ? "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName50"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view18" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName51"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="80dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/view13"
+                            app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:paddingLeft="@dimen/size_point5dp"
+                            android:id="@+id/textView169"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Watch or listen to drama,movie,serial,songs?"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName51"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName52"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="70dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName51" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView177"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Have any mental or \nphysical desesse?"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName52"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView169" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName53"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="70dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName52" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView179"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Involved with a \nspritual person or any organization ?"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName53"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view17" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName54"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+
+                            android:inputType="textPersonName"
+                            android:minHeight="60dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName53" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:minHeight="70dp"
+                            android:id="@+id/editTextTextPersonName56"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/view21" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:minHeight="45dp"
+                            android:id="@+id/editTextTextPersonName57"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:text="Yes"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/view22" />
+
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:minHeight="45dp"
+                            android:id="@+id/editTextTextPersonName58"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/view28" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:gravity="center|left"
+                            android:padding="@dimen/size_point5dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            android:id="@+id/textView184"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:text="About Islam"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName58"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view28" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName59"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="60dp"
+                            android:text="Namess"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/view29" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView185"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:text="TextView"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName59"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView184" />
+
+
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView197"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Idea of belief about islam"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName54"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="@+id/view19"
+                            app:layout_constraintTop_toBottomOf="@+id/textView179" />
+
+                        <TextView
+                            android:textStyle="bold"
+
+                            android:id="@+id/textView198"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Favourite book\nname"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName59"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view29" />
+
+                        <EditText
+                            android:textSize="@dimen/table_item_text_size"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/editTextTextPersonName63"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:minHeight="60dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/textView198"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName59" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView199"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Favourite Person\nname"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName56"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view30" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:gravity="left|center"
+                            android:id="@+id/textView120"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Have any bad Habits?"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName57"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                       />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/textView180"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="center|left"
+                            android:padding="@dimen/size_point5dp"
+                            android:text="Allow wife for Job?"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/table_item_text_size"
+                            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName57"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+
+                            app:layout_constraintStart_toStartOf="@+id/view22"
+                            app:layout_constraintTop_toBottomOf="@+id/textView120" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>

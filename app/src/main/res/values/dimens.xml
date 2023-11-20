@@ -17,6 +17,8 @@
     <dimen name="btn_text_size">16sp</dimen>
     <dimen name="item_text_size">15dp</dimen>
     <dimen name="size_point5dp">7dp</dimen>
-    <dimen name="table_item_text_size">16dp</dimen>
+    <dimen name="table_item_text_size">15dp</dimen>
+    <dimen name="view_width">2dp</dimen>
+
 
 </resources>
