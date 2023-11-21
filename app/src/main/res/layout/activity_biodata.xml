@@ -1071,7 +1071,7 @@
                         android:id="@+id/visibility_table_layout4"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
-                        android:visibility="visible"
+                        android:visibility="gone"
                         android:background="@drawable/layout_style">
 
                         <View
