@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
   <item android:id="@+id/home"
-     android:title=""
+     android:title="Home"
       android:icon="@drawable/ic_home"/>
     <item android:id="@+id/profile"
-        android:title=""
+        android:title="Profile"
         android:icon="@drawable/ic_profile"/>
-    <item android:id="@+id/compas"
-        android:title=""
+    <item android:id="@+id/_dash"
+        android:title="Dashboard"
         android:icon="@drawable/ic_center_badge"/>
-    <item android:id="@+id/status"
-        android:title=""
+    <item android:id="@+id/centers"
+        android:title="Status"
         android:icon="@drawable/ic_status"/>
-    <item android:id="@+id/account"
-        android:title=""
+    <item android:id="@+id/status"
+        android:title="Account"
         android:icon="@drawable/ic_account"/>
 
 </menu>

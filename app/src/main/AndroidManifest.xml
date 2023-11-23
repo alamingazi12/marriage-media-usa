@@ -10,17 +10,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".PrivacyActivity"></activity>
-        <activity android:name=".FilterActivity">
+        <activity android:name=".SearchMarriageOfficeActivity">
 
         </activity>
-        <activity android:name=".SearchCommunityActivity">
-
-        </activity>
+        <activity android:name=".PrivacyActivity" />
+        <activity android:name=".FilterActivity"></activity>
+        <activity android:name=".SearchCommunityActivity"></activity>
         <activity android:name=".FullBiodataActivity" />
-        <activity android:name=".SearchBiodataActivity">
-
-        </activity>
+        <activity android:name=".SearchBiodataActivity"></activity>
         <activity android:name=".BookingCommunityActivity" />
         <activity android:name=".BookingActivity" />
         <activity android:name=".ContactActivity" />
@@ -31,7 +28,6 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".ChoosePlanActivity" />
         <activity android:name=".SingleProductActivity" />
@@ -41,9 +37,7 @@
         <activity android:name=".HelpActivity" />
         <activity android:name=".AccountSettingActivity" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".MessageActivity">
-
-        </activity>
+        <activity android:name=".MessageActivity"></activity>
         <activity android:name=".NewCardActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".AddCardActivity" />
@@ -53,7 +47,7 @@
         <activity android:name=".FreePlanActivity" />
         <activity android:name=".PlanActivity" />
         <activity android:name=".ReviewActivity" />
-        <activity android:name=".OnBoardActivity"></activity>
+        <activity android:name=".OnBoardActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".RessetPassActivity" />
         <activity android:name=".ForgetPassActivity" />
@@ -61,10 +55,7 @@
         <activity android:name=".ChengePassActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
-
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

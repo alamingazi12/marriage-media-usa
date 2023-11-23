@@ -158,13 +158,13 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="300dp">
+                    android:layout_height="220dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/constraintLayout21"
                         android:layout_width="0dp"
-                        android:elevation="4dp"
                         android:visibility="gone"
+                        android:elevation="4dp"
                         android:layout_height="58dp"
                         android:layout_marginStart="32dp"
                         android:layout_marginTop="20dp"
@@ -178,7 +178,7 @@
                             android:id="@+id/textView146"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Community Center"
+                            android:text="Marriage Office"
                             android:textColor="@color/white"
                             android:textSize="20dp"
                             android:textStyle="bold"
@@ -193,9 +193,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
-                        android:text="Select Community Center"
+                        android:text="Select Marriage Office"
                         android:textColor="@color/black"
-                        android:textSize="15dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="30dp"
                         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName23"
                         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName23" />
 
@@ -203,12 +204,13 @@
                         android:shadowColor="@color/black"
                         android:elevation="4dp"
                         android:ellipsize="start"
+
                         android:textSize="15dp"
                         android:id="@+id/editTextTextPersonName23"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/edit_text_height"
                         android:layout_marginStart="40dp"
-                        android:layout_marginTop="60dp"
+                        android:layout_marginTop="70dp"
                         android:layout_marginEnd="40dp"
                         android:background="@drawable/card_style_radious"
                         android:drawableLeft="@drawable/ic_baseline_search_24"
@@ -236,71 +238,13 @@
                         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName23"
                         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName23" />
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayout22"
-                        android:layout_width="150dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="32dp"
-
-                        android:background="@drawable/custom_inner_shadow"
-                        android:paddingLeft="5dp"
-                        android:elevation="4dp"
-                        app:layout_constraintEnd_toStartOf="@+id/button21"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toEndOf="@+id/textView151"
-                        app:layout_constraintTop_toBottomOf="@+id/button20">
-
-                        <Spinner
-                            android:elevation="4dp"
-                            android:gravity="right"
-                            android:padding="5dp"
-                            android:id="@+id/spinner"
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.0"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.0" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <Button
-                        android:elevation="8dp"
-                        android:id="@+id/button21"
-                        style="@style/button_style_google"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:text="Filter"
-                        android:textAllCaps="false"
-                        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout22"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toEndOf="@+id/constraintLayout22"
-                        app:layout_constraintTop_toTopOf="@+id/constraintLayout22" />
-
-                    <TextView
-                        android:id="@+id/textView151"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="7dp"
-                        android:text="Sort By"
-                        android:textColor="@color/black"
-                        android:textSize="18dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout22"
-                        app:layout_constraintEnd_toStartOf="@+id/constraintLayout22"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintHorizontal_chainStyle="packed"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/constraintLayout22" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/community_centers_container"
+                        android:id="@+id/marriage_office_container"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="5dp"

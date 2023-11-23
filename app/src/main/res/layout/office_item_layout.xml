@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:layout_margin="5dp"
+
+    android:background="@drawable/grid_item_style"
+    android:layout_height="230dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView46"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/hotel_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="15dp" />
+
+    <TextView
+        android:id="@+id/textView124"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:text="Pakistani and Indian muslim marriage media"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView46"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/imageView46"
+        app:layout_constraintTop_toBottomOf="@+id/imageView46" />
+
+    <ImageView
+        android:id="@+id/imageView52"
+        android:layout_width="18dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView124"
+        app:srcCompat="@drawable/ic_location" />
+
+    <TextView
+        android:id="@+id/textView130"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="5dp"
+        android:text="New work,Usa"
+        android:textColor="@color/black"
+
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView52"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView52"
+        app:layout_constraintTop_toTopOf="@+id/imageView52" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
