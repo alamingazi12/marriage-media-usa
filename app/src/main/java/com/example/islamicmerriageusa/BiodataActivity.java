@@ -6,12 +6,18 @@ import androidx.transition.AutoTransition;
 import androidx.transition.TransitionManager;
 import android.animation.LayoutTransition;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
+
 public class BiodataActivity extends AppCompatActivity {
+    View notificationBadge1;
+    TextView mybadge;
       ImageView image_show_hide,image_show_hide2,image_show_hide3,image_show_hide4,image_show_hide5,image_show_hide6,image_show_hide7,image_show_hide8,image_show_hide9;
       LinearLayout mother_layout_profile,mother_layout_profile2,mother_layout_profile3,mother_layout_profile4,mother_layout_profile5,mother_layout_profile6,mother_layout_profile7,mother_layout_profile8,mother_layout_profile9;
       ConstraintLayout layout_show_hide,layout_show_hide2,layout_show_hide3,layout_show_hide4,layout_show_hide5,layout_show_hide6,layout_show_hide7,layout_show_hide8,layout_show_hide9;
@@ -24,6 +30,18 @@ public class BiodataActivity extends AppCompatActivity {
        inItAll();
 
     }
+    /*private void addBadgeView() {
+        BottomNavigationMenuView menuView = (BottomNavigationMenuView) navigationView.getChildAt(0);
+        BottomNavigationItemView itemView = (BottomNavigationItemView) menuView.getChildAt(3);
+        notificationBadge1 = LayoutInflater.from(this).inflate(R.layout.mybadgelayout, menuView, false);
+        mybadge =notificationBadge1.findViewById(R.id.badge_counter);
+        String offers=String.valueOf(6);
+        mybadge.setText("6");
+        // TextView _notificationBadgeTextView = notificationBadge1.findViewById();
+        itemView.addView(notificationBadge1);
+    }
+
+     */
 
     private void inItAll() {
         image_show_hide=findViewById(R.id.image_show_hide);

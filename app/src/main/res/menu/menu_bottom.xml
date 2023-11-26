@@ -8,12 +8,12 @@
         android:icon="@drawable/ic_profile"/>
     <item android:id="@+id/_dash"
         android:title="Dashboard"
-        android:icon="@drawable/ic_center_badge"/>
+        android:icon="@drawable/ic_shopping"/>
     <item android:id="@+id/centers"
         android:title="Status"
-        android:icon="@drawable/ic_status"/>
+        android:icon="@drawable/ic_message_options"/>
     <item android:id="@+id/status"
         android:title="Account"
-        android:icon="@drawable/ic_account"/>
+        android:icon="@drawable/ic_accounts"/>
 
 </menu>
