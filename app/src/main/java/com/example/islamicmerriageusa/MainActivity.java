@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.layout_groom_item);
+        /*
         navigationView=findViewById(R.id.bottomNavigationView);
         //addBadgeView();
         slider=findViewById(R.id.rangeSlider);
@@ -57,10 +58,14 @@ public class MainActivity extends AppCompatActivity {
         mybadge.setText("5");
         //TextView _notificationBadgeTextView = notificationBadge1.findViewById();
         itemView.addView(notificationBadge1);
+
+         */
     }
 
     @Override
     protected void onResume() {
         super.onResume();
     }
+
+
 }
