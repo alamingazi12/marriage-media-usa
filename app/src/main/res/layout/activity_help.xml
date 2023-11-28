@@ -90,6 +90,7 @@
         android:id="@+id/tab_contact"
         android:layout_width="0dp"
 
+
         app:tabIndicator="@drawable/layout_style"
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
