@@ -10,10 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".CommunityCenterSingleActivuty">
+        <activity android:name=".MoreFilterActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".SearchMarriageOfficeActivity"></activity>
+        <activity android:name=".CommunityCenterSingleActivuty"></activity>
+        <activity android:name=".SearchMarriageOfficeActivity" />
         <activity android:name=".PrivacyActivity" />
         <activity android:name=".FilterActivity" />
         <activity android:name=".SearchCommunityActivity" />
@@ -22,15 +27,13 @@
         <activity android:name=".BookingCommunityActivity" />
         <activity android:name=".BookingActivity" />
         <activity android:name=".ContactActivity" />
-        <activity android:name=".BiodataActivity"></activity>
+        <activity android:name=".BiodataActivity" />
         <activity android:name=".ChoosePlanActivity" />
         <activity android:name=".SingleProductActivity" />
-        <activity android:name=".CardActivity"/>
+        <activity android:name=".CardActivity" />
         <activity android:name=".ProductActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".HelpActivity">
-
-        </activity>
+        <activity android:name=".HelpActivity"></activity>
         <activity android:name=".AccountSettingActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".MessageActivity" />
@@ -53,12 +56,7 @@
         <activity android:name=".LoginActivity" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+           >
 
         </activity>
     </application>
