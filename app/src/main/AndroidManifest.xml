@@ -10,8 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".MoreFilterActivity">
-
+        <activity android:name=".MoreFilterActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".CommunityCenterSingleActivuty"></activity>
         <activity android:name=".SearchMarriageOfficeActivity" />
@@ -29,12 +32,8 @@
         <activity android:name=".CardActivity" />
         <activity android:name=".ProductActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".HelpActivity" android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".HelpActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".AccountSettingActivity" />
         <activity android:name=".AboutActivity" />
@@ -58,6 +57,7 @@
         <activity android:name=".LoginActivity" />
         <activity
             android:name=".MainActivity">
+
 
 
         </activity>

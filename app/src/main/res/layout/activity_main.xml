@@ -27,7 +27,7 @@
     <com.google.android.material.slider.RangeSlider
         android:id="@+id/rangeSlider"
         android:layout_width="0dp"
-        app:values="@array/initial_slider_values"
+
         android:stepSize=".02"
 
         app:thumbRadius="5dp"

@@ -25,9 +25,34 @@
 
     </string-array>
 
-    <array name="initial_slider_values">
-        <item>2.0</item>
-        <item>7.0</item>
+    <array name="initial_slider_values_salary">
+        <item>30000.0</item>
+        <item>60000.0</item>
+    </array>
+
+    <array name="initial_slider_values_age">
+        <item>24.0</item>
+        <item>28.0</item>
+    </array>
+
+    <array name="state">
+        <item>Please Select</item>
+        <item>Dhaka</item>
+        <item>Khulna</item>
+        <item>Chittagong</item>
+        <item>Rajshahi</item>
+        <item>Sylhet</item>
+        <item>Rangpur</item>
+        <item>Mymansing</item>
+        <item>Barishal</item>
+
+    </array>
+
+    String state[]={"Select Division","Dhaka","Khulna","Chittagong","Rajshahi","Sylhet","Rangpur","Mymansing","Barishal"};
+
+    <array name="initial_slider_values_height">
+        <item>4.0</item>
+        <item>6.0</item>
     </array>
 
     <string-array name="gender">
@@ -37,8 +62,9 @@
     </string-array>
 
     <string-array name="marit_status">
-        <item>Married</item>
-        <item>Unmarried</item>
+        <item>Please Select</item>
+        <item>বিবাহিত</item>
+        <item>অবিবাহিত</item>
 
     </string-array>
 

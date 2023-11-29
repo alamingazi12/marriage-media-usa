@@ -15,15 +15,17 @@ import static com.example.islamicmerriageusa.R.array.barishal;
 import static com.example.islamicmerriageusa.R.array.chittagong;
 import static com.example.islamicmerriageusa.R.array.dhaka;
 import static com.example.islamicmerriageusa.R.array.khulna;
+import static com.example.islamicmerriageusa.R.array.marit_status;
 import static com.example.islamicmerriageusa.R.array.my_arr;
 import static com.example.islamicmerriageusa.R.array.mymensingh;
 import static com.example.islamicmerriageusa.R.array.rajshahi;
 import static com.example.islamicmerriageusa.R.array.rangpur;
+import static com.example.islamicmerriageusa.R.array.state;
 import static com.example.islamicmerriageusa.R.array.sylhet;
 
 public class MoreFilterActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-     String state[]={"Select Division","Dhaka","Khulna","Chittagong","Rajshahi","Sylhet","Rangpur","Mymansing","Barishal"};
-     Spinner state_spinner,city_spinner;
+     //String state[]={"Select Division","Dhaka","Khulna","Chittagong","Rajshahi","Sylhet","Rangpur","Mymansing","Barishal"};
+     Spinner state_spinner,city_spinner,status_spinner;
      int arr_code=-1;
     ArrayAdapter aa;
 
@@ -31,16 +33,24 @@ public class MoreFilterActivity extends AppCompatActivity implements AdapterView
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_more_filter);
+
+        status_spinner=findViewById(R.id.status_spinner);
+        status_spinner.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
         state_spinner=findViewById(R.id.state_spinner);
         state_spinner.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
         city_spinner=findViewById(R.id.city_spinner);
         city_spinner.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
 
 
-         ArrayAdapter aa =//ArrayAdapter.createFromResource(this,state,R.layout.my_spinner);
-                new ArrayAdapter(this,android.R.layout.simple_spinner_item,state);
+         ArrayAdapter aa =ArrayAdapter.createFromResource(this,state,R.layout.my_spinner);
+               // new ArrayAdapter(this,android.R.layout.simple_spinner_item,state);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         state_spinner.setAdapter(aa);
+
+        ArrayAdapter aaa =ArrayAdapter.createFromResource(this,marit_status,R.layout.support_simple_spinner_dropdown_item);
+        // new ArrayAdapter(this,android.R.layout.simple_spinner_item,state);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        status_spinner.setAdapter(aaa);
     }
 
     public void setDistrictMenu(int arr){
@@ -58,38 +68,38 @@ public class MoreFilterActivity extends AppCompatActivity implements AdapterView
 
        if(parent.getId()==R.id.state_spinner){
            //Toast.makeText(getApplicationContext(), state[position], Toast.LENGTH_LONG).show();
-           if(state[position].toLowerCase().equals("select division")){
+           if(getResources().getStringArray(state)[position].toLowerCase().equals("select division")){
                // Toast.makeText(getApplicationContext(), "Plaese Select a Division", Toast.LENGTH_LONG).show();
            }
-           else if(state[position].toLowerCase().equals("dhaka")){
+           else if(getResources().getStringArray(state)[position].toLowerCase().equals("dhaka")){
                setDistrictMenu(R.array.dhaka);
                arr_code=1;
            }
-           else if(state[position].toLowerCase().equals("khulna")){
+           else if(getResources().getStringArray(state)[position].toLowerCase().equals("khulna")){
                setDistrictMenu(R.array.khulna);
                arr_code=2;
            }
-           else if(state[position].toLowerCase().equals("rangpur")){
+           else if(getResources().getStringArray(state)[position].toLowerCase().equals("rangpur")){
                setDistrictMenu(R.array.rangpur);
                arr_code=3;
            }
-           else if(state[position].toLowerCase().equals("chittagong")){
+           else if(getResources().getStringArray(state)[position].toLowerCase().equals("chittagong")){
                setDistrictMenu(R.array.chittagong);
                arr_code=4;
            }
-           else if(state[position].toLowerCase().equals("barishal")){
+           else if(getResources().getStringArray(state)[position].toLowerCase().equals("barishal")){
                setDistrictMenu(R.array.barishal);
                arr_code=5;
            }
-           else if(state[position].toLowerCase().equals("sylhet")){
+           else if(getResources().getStringArray(state)[position].toLowerCase().equals("sylhet")){
                setDistrictMenu(R.array.sylhet);
                arr_code=6;
            }
-           else if(state[position].toLowerCase().equals("rajshahi")){
+           else if(getResources().getStringArray(state)[position].toLowerCase().equals("rajshahi")){
                setDistrictMenu(R.array.rajshahi);
                arr_code=7;
            }
-           else if(state[position].toLowerCase().equals("mymansing")){
+           else if(getResources().getStringArray(state)[position].toLowerCase().equals("mymansing")){
                setDistrictMenu(R.array.mymensingh);
                arr_code=8;
            }
