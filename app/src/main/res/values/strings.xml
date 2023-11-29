@@ -48,7 +48,8 @@
 
     </array>
 
-    String state[]={"Select Division","Dhaka","Khulna","Chittagong","Rajshahi","Sylhet","Rangpur","Mymansing","Barishal"};
+    String state[]={"Select
+    Division","Dhaka","Khulna","Chittagong","Rajshahi","Sylhet","Rangpur","Mymansing","Barishal"};
 
     <array name="initial_slider_values_height">
         <item>4.0</item>
@@ -155,8 +156,6 @@
         <item>Netrokona</item>
         <item>Sherpur</item>
     </string-array>
-
-
 
 
 </resources>

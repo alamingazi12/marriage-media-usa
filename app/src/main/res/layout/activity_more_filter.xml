@@ -105,7 +105,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="620dp">
+                android:layout_height="635dp">
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
@@ -210,7 +210,52 @@
                         app:values="@array/initial_slider_values_salary" />
 
                     <LinearLayout
-                        android:layout_marginTop="20dp"
+
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp">
+                            <TextView
+                                android:textSize="15dp"
+                                android:textColor="@color/black"
+                                android:gravity="left|center"
+
+                                android:text="City"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                          />
+
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp">
+                            <TextView
+                                android:textSize="15dp"
+                                android:textColor="@color/black"
+                                android:gravity="left|center"
+
+                                android:text="Division"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -220,7 +265,7 @@
                             android:layout_weight="1"
                             android:layout_marginEnd="5dp"
                             android:layout_width="0dp"
-                            android:layout_height="50dp">
+                            android:layout_height="45dp">
                             <Spinner
                                 android:paddingLeft="@dimen/size_point5dp"
                                 android:id="@+id/city_spinner"
@@ -239,7 +284,7 @@
                             android:layout_marginStart="5dp"
                             android:layout_weight="1"
                             android:layout_width="0dp"
-                            android:layout_height="50dp">
+                            android:layout_height="45dp">
                             <Spinner
                                 android:paddingLeft="@dimen/size_point5dp"
                                 android:id="@+id/state_spinner"

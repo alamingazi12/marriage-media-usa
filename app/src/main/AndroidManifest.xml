@@ -10,13 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".MoreFilterActivity" android:exported="true">
+        <activity android:name=".ChatActivity"></activity>
+        <activity
+            android:name=".MessangerActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CommunityCenterSingleActivuty"></activity>
+        <activity android:name=".MoreFilterActivity"></activity>
+        <activity android:name=".CommunityCenterSingleActivuty" />
         <activity android:name=".SearchMarriageOfficeActivity" />
         <activity android:name=".PrivacyActivity" />
         <activity android:name=".FilterActivity" />
@@ -32,9 +37,7 @@
         <activity android:name=".CardActivity" />
         <activity android:name=".ProductActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".HelpActivity">
-
-        </activity>
+        <activity android:name=".HelpActivity" />
         <activity android:name=".AccountSettingActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".MessageActivity" />
@@ -55,12 +58,7 @@
         <activity android:name=".ChengePassActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity
-            android:name=".MainActivity">
-
-
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

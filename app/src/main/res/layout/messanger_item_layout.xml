@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <View
+
+        android:id="@+id/textView205"
+        android:layout_width="8dp"
+
+        android:layout_height="8dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/online_status_style"
+        app:layout_constraintStart_toStartOf="@+id/circleImageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="28dp"
+        android:src="@drawable/girl_person"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/textView207"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="Md. Farhan khan"
+        app:layout_constraintStart_toEndOf="@+id/circleImageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:id="@+id/textView208"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hallo, How are you?"
+        app:layout_constraintStart_toStartOf="@+id/textView207"
+        app:layout_constraintTop_toBottomOf="@+id/textView207" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
