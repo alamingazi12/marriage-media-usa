@@ -10,22 +10,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".ChatActivity"></activity>
-        <activity
-            android:name=".MessangerActivity"
-            android:exported="true">
+        <activity android:name=".DashboardActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MoreFilterActivity"></activity>
+        <activity android:name=".ChatActivity" />
+        <activity
+            android:name=".MessangerActivity"
+           android:exported="true" >
+
+
+        </activity>
+        <activity android:name=".MoreFilterActivity" />
         <activity android:name=".CommunityCenterSingleActivuty" />
-        <activity android:name=".SearchMarriageOfficeActivity" />
+        <activity android:name=".SearchMarriageOfficeFragment">
+
+        </activity>
         <activity android:name=".PrivacyActivity" />
         <activity android:name=".FilterActivity" />
-        <activity android:name=".SearchCommunityActivity" />
+        <activity android:name=".SearchCommunityFragment">
+
+        </activity>
         <activity android:name=".FullBiodataActivity" />
         <activity android:name=".SearchBiodataActivity" />
         <activity android:name=".BookingCommunityActivity" />
