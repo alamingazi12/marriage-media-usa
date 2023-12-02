@@ -5,102 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SearchCommunityFragment">
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-
-        android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:layout_marginTop="4dp"
-        android:background="@color/action_bar_color"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="16dp">
-
-            <TextView
-
-                android:id="@+id/textView109"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="Marriage Office"
-
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/circleImageView"
-                app:layout_constraintStart_toEndOf="@+id/imageView40"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.533" />
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/circleImageView"
-                android:layout_width="30dp"
-                android:layout_height="0dp"
-                android:layout_marginEnd="25dp"
-                android:src="@drawable/girl_person"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <ImageView
-                android:id="@+id/imageView40"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_arro_backs" />
-
-            <ImageView
-                android:id="@+id/imageView49"
-                android:layout_width="24dp"
-                android:layout_height="27dp"
-                android:layout_marginRight="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/circleImageView"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_bell_icons" />
-
-            <TextView
-                android:layout_marginLeft="@dimen/size_point5dp"
-                android:id="@+id/textView181"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="14dp"
-                android:maxLength="3"
-                android:text="4"
-                android:layout_marginRight="-2dp"
-                android:textColor="@color/number_color"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView49"
-                app:layout_constraintEnd_toEndOf="@+id/imageView49" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.appcompat.widget.Toolbar>
-
-
-
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout4"
         android:layout_width="0dp"
-        android:elevation="4dp"
 
         android:layout_height="50dp"
-        android:layout_marginBottom="12dp"
         android:layout_marginLeft="25dp"
-
         android:layout_marginRight="25dp"
+        android:layout_marginBottom="12dp"
+
         android:background="@drawable/bottom_bar_style"
+        android:elevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
@@ -112,7 +31,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_home"/>
+            app:srcCompat="@drawable/ic_home" />
 
         <ImageView
             android:id="@+id/imageView41"
@@ -168,16 +87,18 @@
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+        app:layout_constraintTop_toTopOf="parent">
+
         <androidx.core.widget.NestedScrollView
-            android:fillViewport="true"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
             <LinearLayout
-                android:orientation="vertical"
-                android:fitsSystemWindows="true"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -212,17 +133,16 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <EditText
-                        android:layout_marginRight="10dp"
-                        android:layout_marginLeft="15dp"
-                        app:layout_constraintHorizontal_weight="2"
                         android:id="@+id/editTextTextPersonName23"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
-
+                        android:layout_marginLeft="15dp"
                         android:layout_marginTop="38dp"
-                        android:background="@drawable/card_style_radious"
+                        android:layout_marginRight="10dp"
 
+                        android:background="@drawable/card_style_radious"
                         android:drawablePadding="7dp"
+
                         android:elevation="4dp"
                         android:ellipsize="start"
                         android:ems="10"
@@ -233,24 +153,24 @@
                         android:textSize="13dp"
                         app:layout_constraintEnd_toStartOf="@+id/button20"
                         app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_weight="2"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/constraintLayout21" />
 
                     <Button
-                        android:layout_marginRight="15dp"
-                        app:layout_constraintHorizontal_weight="1"
                         android:id="@+id/button20"
-
-
                         style="@style/button_style_google"
-                        android:layout_marginLeft="10dp"
                         android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:elevation="4dp"
 
-                        android:drawablePadding="2dp"
-                        android:fontFamily="@font/roboto_regular"
+
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
                         android:drawableLeft="@drawable/search"
+                        android:drawablePadding="2dp"
+
+                        android:elevation="4dp"
+                        android:fontFamily="@font/roboto_regular"
                         android:text="Find"
                         android:textAllCaps="false"
                         android:textSize="13dp"
@@ -258,14 +178,16 @@
                         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName23"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_weight="1"
                         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName23"
                         app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName23" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
                 <LinearLayout
-                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp">
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/marriage_office_container"

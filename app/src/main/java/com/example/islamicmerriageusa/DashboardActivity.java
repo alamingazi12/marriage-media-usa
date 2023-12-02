@@ -25,6 +25,8 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         initText();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                new DashboardFragment()).commit();
 
 
     }
@@ -41,10 +43,25 @@ public class DashboardActivity extends AppCompatActivity {
              temp_text=first_text.getText().toString();
              first_text.setText(heading_text.getText().toString());
              heading_text.setText(temp_text);
-             if (temp_text.toLowerCase().equals("user"))
-                getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
-                     new  DashboardFragment()).commit();
+             if (temp_text.toLowerCase().equals("user")) {
+                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                         new BiodataActivity()).commit();
+             }
+             else if(temp_text.toLowerCase().equals("dashboard")){
+                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                         new DashboardFragment()).commit();
+             }
+             else if(temp_text.toLowerCase().equals("kazi office")){
+                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                         new SearchMarriageOfficeFragment()).commit();
+             }
+             else if(temp_text.toLowerCase().equals("community center")){
+                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                         new SearchCommunityFragment()).commit();
+             }
             }
+
+
 
         });
 
@@ -54,6 +71,22 @@ public class DashboardActivity extends AppCompatActivity {
                 temp_text=second_text.getText().toString();
                 second_text.setText(heading_text.getText().toString());
                 heading_text.setText(temp_text);
+                if (temp_text.toLowerCase().equals("user")) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                            new BiodataActivity()).commit();
+                }
+                else if(temp_text.toLowerCase().equals("dashboard")){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                            new DashboardFragment()).commit();
+                }
+                else if(temp_text.toLowerCase().equals("kazi office")){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                            new SearchMarriageOfficeFragment()).commit();
+                }
+                else if(temp_text.toLowerCase().equals("community center")){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                            new SearchCommunityFragment()).commit();
+                }
 
             }
         });
@@ -63,6 +96,23 @@ public class DashboardActivity extends AppCompatActivity {
                 temp_text=thired_text.getText().toString();
                 thired_text.setText(heading_text.getText().toString());
                 heading_text.setText(temp_text);
+
+                if (temp_text.toLowerCase().equals("user")) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                            new BiodataActivity()).commit();
+                }
+                else if(temp_text.toLowerCase().equals("dashboard")){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                            new DashboardFragment()).commit();
+                }
+                else if(temp_text.toLowerCase().equals("kazi office")){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                            new SearchMarriageOfficeFragment()).commit();
+                }
+                else if(temp_text.toLowerCase().equals("community center")){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
+                            new SearchCommunityFragment()).commit();
+                }
             }
         });
 
