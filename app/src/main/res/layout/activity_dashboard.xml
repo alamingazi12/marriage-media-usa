@@ -74,73 +74,67 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <FrameLayout
-        android:id="@+id/frame_layout_container"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/frame_layout_viewpager"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout23" >
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_tab"
+        app:layout_constraintVertical_bias="0.0">
 
         <View
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="8dp"
             android:background="@color/black" />
-    </FrameLayout>
+    </androidx.viewpager.widget.ViewPager>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout23"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/dashboard_tab"
         android:layout_width="0dp"
-        android:layout_marginBottom="5dp"
+        app:tabIndicator="@drawable/layout_style"
+
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/size_point5dp"
+
         android:padding="4dp"
+        app:tabIndicatorColor="@color/btn_bg"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorHeight="7dp"
+        app:tabIndicatorAnimationMode="linear"
+        app:tabUnboundedRipple="true"
+        app:tabSelectedTextColor="@color/btn_bg"
+        app:tabTextAppearance="@style/Custom_Style"
+        app:tabTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2">
 
-        <TextView
-            android:id="@+id/first_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="User"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/second_text"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/second_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kazi Office"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/thiredtext"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/first_text"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/thiredtext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Community Center"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/second_text"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.tabs.TabLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="12dp"
+
+        android:background="@drawable/bottom_bar_style"
+        android:elevation="4dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_background"
+        app:itemRippleColor="@color/google_btn_color"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

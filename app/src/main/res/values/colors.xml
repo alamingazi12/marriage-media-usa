@@ -29,7 +29,7 @@
 #522B79
 
 #171717-->
-   <color name="view_color">#C8BFC5</color>
+   <color name="view_color">#ffffff</color>
     <color name="btn_bg">#AE277C</color>
     <color name="btn_color">#522B79</color>
     <color name="heading_color">#171717</color>

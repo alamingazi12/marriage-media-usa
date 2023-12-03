@@ -1,8 +1,12 @@
 package com.example.islamicmerriageusa;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,12 +15,15 @@ import android.widget.TextView;
 
 import com.example.islamicmerriageusa.adapter.PatroAdapter;
 import com.example.islamicmerriageusa.model.Patro;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 
 public class DashboardActivity extends AppCompatActivity {
+    TabLayout dashboard_tab;
+    ViewPager dashboard_viewpager;
     String temp_text;
-    TextView heading_text,first_text,second_text,thired_text;
+    TextView heading_text, first_text, second_text, thired_text;
 
     ArrayList<Patro> patros;
 
@@ -24,18 +31,18 @@ public class DashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        initText();
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_container,
-                new DashboardFragment()).commit();
+
+        dashboard_tab = findViewById(R.id.dashboard_tab);
+        dashboard_viewpager = findViewById(R.id.frame_layout_viewpager);
+        dashboard_viewpager.setAdapter(new SectionsPagerAdapter(getSupportFragmentManager()));
+        dashboard_tab.setupWithViewPager(dashboard_viewpager);
 
 
     }
-
+/*
     private void initText() {
         heading_text=findViewById(R.id.heading_text);
-        first_text=findViewById(R.id.first_text);
-        second_text=findViewById(R.id.second_text);
-        thired_text=findViewById(R.id.thiredtext);
+
 
         first_text.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,5 +123,52 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
+    */
+
+
+
+    public class SectionsPagerAdapter extends FragmentPagerAdapter {
+        public SectionsPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+
+        @Override
+        public Fragment getItem(int position) {
+            Fragment fragment = null;
+            switch (position) {
+                case 0:
+                    fragment = new DashboardFragment();
+                    break;
+                case 1:
+                    fragment = new SearchMarriageOfficeFragment();
+                    break;
+                case 2:
+                    fragment = new SearchCommunityFragment();
+                    break;
+            }
+            return fragment;
+        }
+
+        @Override
+        public int getCount() {
+            // Show 3 total pages.
+            return 3;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position) {
+                case 0:
+                    return "User";
+
+                case 1:
+                    return "Marriage Office";
+                case 2:
+                    return "Community Center";
+            }
+            return null;
+        }
     }
+
 }

@@ -1,4 +1,4 @@
-package com.example.islamicmerriageusa;
+package com.example.islamicmerriageusa.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.PagerAdapter;
+
+import com.example.islamicmerriageusa.R;
 
 
 public class ViewpagerAdapter extends PagerAdapter {
@@ -34,8 +36,8 @@ public class ViewpagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull  ViewGroup container, int position) {
         LayoutInflater layoutInflater=(LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-       View view= layoutInflater.inflate(R.layout.slider_layout_groom,container,false);
-          ImageView imageView=view.findViewById(R.id.slider_image);
+       View view= layoutInflater.inflate(R.layout.slider_layout,container,false);
+          ImageView imageView=view.findViewById(R.id.imageView3);
           imageView.setImageResource(images[position]);
           container.addView(view);
        return view;

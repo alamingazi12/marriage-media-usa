@@ -10,36 +10,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicMerriageUSA">
-        <activity android:name=".DashboardActivity" android:exported="true">
+        <activity android:name=".PersonalBiodataActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DashboardActivity"></activity>
         <activity android:name=".ChatActivity" />
         <activity
             android:name=".MessangerActivity"
-           android:exported="true" >
-
-
-        </activity>
+            android:exported="true"></activity>
         <activity android:name=".MoreFilterActivity" />
         <activity android:name=".CommunityCenterSingleActivuty" />
-        <activity android:name=".SearchMarriageOfficeFragment">
-
-        </activity>
+        <activity android:name=".SearchMarriageOfficeFragment"></activity>
         <activity android:name=".PrivacyActivity" />
         <activity android:name=".FilterActivity" />
-        <activity android:name=".SearchCommunityFragment">
-
-        </activity>
+        <activity android:name=".SearchCommunityFragment"></activity>
         <activity android:name=".FullBiodataActivity" />
         <activity android:name=".SearchBiodataActivity" />
         <activity android:name=".BookingCommunityActivity" />
         <activity android:name=".BookingActivity" />
         <activity android:name=".ContactActivity" />
-        <activity android:name=".BiodataActivity" />
+        <activity
+            android:name=".BiodataActivity"
+            >
+
+        </activity>
         <activity android:name=".ChoosePlanActivity" />
         <activity android:name=".SingleProductActivity" />
         <activity android:name=".CardActivity" />
